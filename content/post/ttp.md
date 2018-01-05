@@ -29,27 +29,32 @@ beneficial for the residents.
 ## Introduction
 
 1. TMA are of diverse etiologies but have **unified manifestation**
-
+    
     a. MAHA (Coombs negative, increased LDH, schistocytes)
+    
     b. Thrombocytopenia
+    
     c. Organ injury (ischemic)
     
 1. TMA has **unified pathogenesis**
 
-	a. Endothelial dysfunction
-	a. Microinfarcts
+    a. Endothelial dysfunction
+    
+    b. Microinfarcts
 	
 1. **Approach to treatment**
 
-	a. Primary TMA syndromes (ADAMTS deficiency, HUS): treatment to be of the cause
-	a. Secondary TMA syndromes: treat the precipitating cause
+    a. Primary TMA syndromes (ADAMTS deficiency, HUS): treatment to be of the cause
+    
+    b. Secondary TMA syndromes: treat the precipitating cause
 	
 ### ADAMTS deficient TTP
 
 1. **Classification**
 
-	a. Hereditary (ADAMTS deficiency): homozygous or compound heterozygous mutations.
-	a. Acquired (anti ADAMTS antibodies)
+    a. Hereditary (ADAMTS deficiency): homozygous or compound heterozygous mutations.
+    
+    b. Acquired (anti ADAMTS antibodies)
 
 1. ADAMTS cleaves the ultra-large vWF polymers into smaller fragments, which lead to controlled platelet adhesion. In the absence of ADAMTS, the ultra-large vWF polymers leads to excess platelet plugs in high flow vascular beds, leading to clinical features of TTP.
 	
@@ -65,18 +70,25 @@ beneficial for the residents.
 
 1. **Treatment**
 
-	a. Plasma replacement
-	a. Plasma derived Factor VIII concentrate (contain ADAMTS)
-	a. Without plasmapheresis,  survival 10%, else 78%
-	a. Glucocorticoid (standard), Rituximab and other immunosuppressives in complicated cases
+	  a. Plasma replacement
+	
+	  b. Plasma derived Factor VIII concentrate (contain ADAMTS)
+	  
+	  c. Without plasmapheresis,  survival 10%, else 78%
+	  
+	  d. Glucocorticoid (standard), Rituximab and other immunosuppressives in complicated cases
 	
 1. **Long term complications**
 
-	a. Relapse
-	a. Dementia, cognitive impairment, major depression
-	a. SLE
-	a. Hypertension
-	a. Early deaths
+	  a. Relapse
+	
+  	b. Dementia, cognitive impairment, major depression
+	
+	  c. SLE
+	
+	  d. Hypertension
+	
+	  e. Early deaths
 
 ### Complement mediated TMA
 
@@ -88,15 +100,17 @@ beneficial for the residents.
 
 1. 	**Classification**
 
-	a. Hereditary
-	a. Acquired (antibodies)
+	  a. Hereditary
+	  
+	  b. Acquired (antibodies)
 	
 1. 	Alternate complement pathway is constitutively active due to spotaneous hydrolysis of C3 to C3b. Unregulated contued activation of complement pathway can lead to endothelial and platelet activation.
 
 1.	**Mutation** can be of two types
 
-	a. Gain of function mutation of complement factors (C3, CFB)
-	a. Loss of function mutation of complement inhibitors (CFH, CFI, CD46)
+	  a. Gain of function mutation of complement factors (C3, CFB)
+	  
+	  b. Loss of function mutation of complement inhibitors (CFH, CFI, CD46)
 	
 1.	Heterozygous mutations are symptomatic
 
@@ -110,15 +124,19 @@ beneficial for the residents.
 
 1.	**Treatment**
 
-	a. Plasma replacement
-	a. Anti complement treatment (Eculizumumab) (High cost, increased chances of meningococcal infections). Can be tried when antibodies against complement factor H present
-	a. Immunosupression
-	a. Liver transplantation
+	  a. Plasma replacement
+	
+	  b. Anti complement treatment (Eculizumumab) (High cost, increased chances of meningococcal infections). Can be tried when antibodies against complement factor H present
+	
+	  c. Immunosupression
+	
+	  d. Liver transplantation
 	
 1.	**Long term outcomes**
 
 	a. Chronic Renal Failure
-	a. Recurrence after renal transplantation
+	
+	b. Recurrence after renal transplantation
 
 ### Shiga Toxin Mediated HUS
 
@@ -132,26 +150,29 @@ beneficial for the residents.
 
 1.	**Treatment**
 
-	a. Largely supportive
-	a. Hydration is reno-protective
-	a. Role of plasma replacement and anti complement therapy is doubtful
+  	a. Largely supportive
+	
+  	b. Hydration is reno-protective
+	
+	  c. Role of plasma replacement and anti complement therapy is doubtful
 	
 1.	**Long term complications**
 
-	a. Hypertension and neurological abnormalities may persists
-	a. ESRD may rarely occur
+	  a. Hypertension and neurological abnormalities may persists
+	
+	  b. ESRD may rarely occur
 
 ### Drug Mediated TMA (immune reaction)
 
 1.	Quinine, Quiteapine, Gemcitabine
 
-1. 	**Caused by: ** Drug dependent antibodies leading to endothelial activation
+1. 	**Caused by:** Drug dependent antibodies leading to endothelial activation
 	
 1. 	Sudden onset systemic symptoms, with **anuric acute kidney injury**, within hours after drug intake
 
 1.	**Treatment:** Supportive care and avoidance of drug
 
-1.	**Long term complications: ** CKD and hypertension common. ESRD may occur.
+1.	**Long term complications:** CKD and hypertension common. ESRD may occur.
 
 ### Drug Mediated TMA (toxic dose related)
 
@@ -183,9 +204,11 @@ beneficial for the residents.
 
 1. 	Systemic Infection
 
-	a. Viral: CMV, EBV, HIV
-	a. Fungal: Aspergillus, Mucor
-	a. Bacterial infections, Rickettsial, Malaria, IE
+	  a. Viral: CMV, EBV, HIV
+	  
+	  b. Fungal: Aspergillus, Mucor
+	  
+	  c. Bacterial infections, Rickettsial, Malaria, IE
 	
 1.	Systemic Malignancies
 
@@ -236,7 +259,7 @@ decreases confidence in a primary TMA.
 
 ## References
 
-1.  [NEJM article](https://10.1056/NEJMra1312353)
+1.  [NEJM article](http://www.nejm.org/doi/full/10.1056/NEJMra1312353)
 
 1.  [Uptodate article](https://www.uptodate.com/contents/approach-to-the-patient-with-suspected-ttp-hus-or-other-thrombotic-microangiopathy-tma)
 
