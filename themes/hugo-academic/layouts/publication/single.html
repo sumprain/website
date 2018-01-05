@@ -94,7 +94,7 @@
     <div class="space-below"></div>
 
     <div class="article-style">{{ .Content }}</div>
-
+    {{ partial "comments.html" . }}
     {{ partial "tags.html" . }}
 
   </div>
@@ -104,6 +104,5 @@
   {{ partial "section_pager.html" . }}
 </div>
 
-{{ partial "comments.html" . }}
 {{ partial "footer_container.html" . }}
 {{ partial "footer.html" . }}
