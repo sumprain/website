@@ -59,3 +59,7 @@ He is presently working as Clnical Hematologist at Army Hospital
 He is passionately involved in Data Analysis with [R](https://www.r-project.org/).
 
 He programs in R and C++.
+
+Here are the [list of publications]({{< ref "misc/pres_publ_list/publications.md" >}})
+
+Here are the [list of presentations]({{< ref "misc/pres_publ_list/presentations.md" >}})
