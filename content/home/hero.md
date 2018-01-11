@@ -24,8 +24,8 @@ weight = 3
 #  label = '<i class="fa fa-download"></i> Install Now'
 +++
 
-Study hard what interests you the most in the most undisciplined, irreverent and original manner possible.
+> Study hard what interests you the most in the most undisciplined, irreverent and original manner possible.
 
-You have no responsibility to live up to what other people think you ought to accomplish. I have no responsibility to be like they expect me to be. It's their mistake, not my failing.
+> You have no responsibility to live up to what other people think you ought to accomplish. I have no responsibility to be like they expect me to be. It's their mistake, not my failing.
 
-- _Richard Feynman_
+------ _Richard Feynman_

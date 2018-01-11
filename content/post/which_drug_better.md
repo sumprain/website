@@ -141,6 +141,12 @@ interpret results of drug effective trials.
 
 Comments are welcome.
 
+### Comments in Twitter
+
+**Comment by [Frank E Harrell](http://www.fharrell.com/)**
+
+{{< tweet 951430606579171329 >}}
+
 ## Code for the above simulation 
 
 {{< gist sumprain f9cc66c10b927b2a7674a794ff9b8f33 >}}
