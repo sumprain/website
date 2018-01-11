@@ -133,7 +133,15 @@ So, we can seen that pairwise Arm 1 is better Arm 2 in only
 around 20% of times and in rest of the times, Arm 1 and Arm 2 
 are equivalent or Arm 1 is worse than Arm 2.
 
-At 12 months, the performance of Daratumumab is not that spectacular 
+At 12 months, the performance of Arm 1 is not that spectacular 
 as it looks.
 
+The above post has been written to illustrate another way to 
+interpret results of drug effective trials.
+
 Comments are welcome.
+
+## Code for the above simulation 
+
+{{< gist sumprain f9cc66c10b927b2a7674a794ff9b8f33 >}}
+
