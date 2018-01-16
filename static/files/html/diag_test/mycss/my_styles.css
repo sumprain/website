@@ -1,0 +1,11 @@
+.img-center {
+  display: block;
+  margin: auto;
+  width: 40%;
+}
+
+.subtitle {
+  color: grey;
+  font-weight: normal;
+  font-size: 1.2em;
+}

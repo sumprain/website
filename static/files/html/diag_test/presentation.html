@@ -1,0 +1,1502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="SUMAN KUMAR" />
+  <meta name="date" content="2017-08-18" />
+  <meta name="copyright" content="email: sumprain@gmail.com, Army Hospital (Research & Referral)"/>
+  <title>OVERVIEW OF DIAGNOSTIC TESTS</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link href="presentation_files/slidy-2/styles/slidy.css" rel="stylesheet" />
+  <script src="presentation_files/slidy-2/scripts/slidy.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+   href="mycss/my_styles.css" />
+  <meta name="duration" content="60" />
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">OVERVIEW OF DIAGNOSTIC TESTS</h1>
+  <p class="subtitle">@ Biostatistics &amp; Hands on Practices on Medical Data Using SPSS, ILBS</p>
+  <p class="author">
+SUMAN KUMAR
+  </p>
+  <p class="date">18 August 2017</p>
+</div>
+<div id="example-dataset" class="titleslide slide section level1"><h1>Example dataset</h1></div><div id="acute-subarachnoid-hemorrhage" class="slide section level2">
+<h1>Acute Subarachnoid Hemorrhage</h1>
+<ul>
+<li><strong>Source:</strong> A multiparameter panel method for outcome prediction following aneurysmal subarachnoid hemorrhage. Intensive Care Medicine 36(1), 107–115. DOI: <a href="http://10.1007/s00134-009-1641-y" class="uri">http://10.1007/s00134-009-1641-y</a></li>
+<li>Several clinical and one laboratory variable of 113 patients with an aneurysmal subarachnoid hemorrhage.</li>
+<li>Data frame with 113 observations of 7 variables</li>
+<li>Explanations of variables:
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Glasgow_Outcome_Scale">gos6</a>: Glasgow Outcome Score</li>
+<li><a href="https://en.wikipedia.org/wiki/NME1">ndka</a>: Nucleoside diphosphate kinase A</li>
+<li><a href="http://jnnp.bmj.com/content/51/11/1457.1">wfns</a>: World Federation of Neurological Surgeons Scoring</li>
+<li><a href="https://en.wikipedia.org/wiki/S100B">s100b</a>: Astrocyte protein, which spills over in blood in the presence of brain injury</li>
+<li><strong>outcome: Two grades of SAH - <code>Good</code> and <code>Poor</code></strong></li>
+</ul></li>
+</ul>
+<table style="text-align:center">
+<tr>
+<td colspan="8" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+gos6
+</td>
+<td>
+outcome
+</td>
+<td>
+gender
+</td>
+<td>
+age
+</td>
+<td>
+wfns
+</td>
+<td>
+s100b
+</td>
+<td>
+ndka
+</td>
+</tr>
+<tr>
+<td colspan="8" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+1
+</td>
+<td>
+5
+</td>
+<td>
+Good
+</td>
+<td>
+Female
+</td>
+<td>
+42
+</td>
+<td>
+1
+</td>
+<td>
+-2.040
+</td>
+<td>
+1.102
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+2
+</td>
+<td>
+5
+</td>
+<td>
+Good
+</td>
+<td>
+Female
+</td>
+<td>
+37
+</td>
+<td>
+1
+</td>
+<td>
+-1.966
+</td>
+<td>
+2.145
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+3
+</td>
+<td>
+5
+</td>
+<td>
+Good
+</td>
+<td>
+Female
+</td>
+<td>
+42
+</td>
+<td>
+1
+</td>
+<td>
+-2.303
+</td>
+<td>
+2.091
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+4
+</td>
+<td>
+5
+</td>
+<td>
+Good
+</td>
+<td>
+Female
+</td>
+<td>
+27
+</td>
+<td>
+1
+</td>
+<td>
+-3.219
+</td>
+<td>
+2.344
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+5
+</td>
+<td>
+1
+</td>
+<td>
+Poor
+</td>
+<td>
+Female
+</td>
+<td>
+42
+</td>
+<td>
+3
+</td>
+<td>
+-2.040
+</td>
+<td>
+2.856
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+6
+</td>
+<td>
+1
+</td>
+<td>
+Poor
+</td>
+<td>
+Male
+</td>
+<td>
+48
+</td>
+<td>
+2
+</td>
+<td>
+-2.303
+</td>
+<td>
+2.546
+</td>
+</tr>
+<tr>
+<td colspan="8" style="border-bottom: 1px solid black">
+</td>
+</tr>
+</table>
+</div>
+<div id="overview-of-diagnostic-tests" class="titleslide slide section level1"><h1>Overview of Diagnostic Tests</h1></div><div id="classes" class="slide section level2">
+<h1>Classes</h1>
+<ul>
+<li>Entities (Patients) can be classified in <strong>Classes</strong> (Good and Poor)</li>
+<li>Classes are containers with <strong>homogenous</strong> entities</li>
+<li>Different classes are <strong>heterogenous</strong></li>
+<li>Many of the classes are <strong>hierarchial</strong> in nature</li>
+</ul>
+</div><div id="diagnostic-tests-as-classifiers" class="slide section level2">
+<h1>Diagnostic Tests as Classifiers</h1>
+<ul>
+<li><strong>Classifiers:</strong> Tools which help us to place a <strong>given entity</strong> (patient) in one of the many <strong>mutually exclusive classes</strong> (Good and Poor)</li>
+</ul>
+<p><img src="figure/classifiers_class.svg" width="60%" style="display: block; margin: auto;" /></p>
+</div><div id="diagnostic-tests-change-the-probability-distribution" class="slide section level2">
+<h1>Diagnostic Tests change the Probability Distribution</h1>
+<p><img src="figure/bayes.svg" width="60%" style="display: block; margin: auto;" /></p>
+<p><br/></p>
+<p class="incremental" style="text-align:center">
+<strong>This is Bayes Theorem. Crux of all diagnostic tests</strong>
+</p>
+</div><div id="chain-of-diagnostic-tests" class="slide section level2">
+<h1>Chain of Diagnostic Tests</h1>
+<p>In real life, we apply a <strong>chain of diagnostic tests</strong> to assign a particular class to a patient.</p>
+<p><img src="figure/diag_chain.svg" width="60%" style="display: block; margin: auto;" /></p>
+</div><div id="stages-of-development-of-diagnostic-tests" class="slide section level2">
+<h1>Stages of development of Diagnostic Tests</h1>
+<ul class="incremental">
+<li><strong>Applied to patients with known diagnoses: </strong> Assess the performance of Diagnostic test</li>
+</ul>
+<p><img class="incremental img-center" src="figure/diag_test_scen_1.svg" /></p>
+<ul class="incremental">
+<li><strong>Applied to patients before knowing diagnosis:</strong> Assess performance of diagnostic test + calculation post-test assignment of probability</li>
+</ul>
+<p><img class="incremental img-center" src="figure/diag_test_scen_2.svg" /></p>
+<ul class="incremental">
+<li><strong>Applied to patients in one of the arms after randomisation and assessing difference in clinically relevant outcome:</strong> Most realistic assessment of a diagnostic test</li>
+</ul>
+<p><img class="incremental img-center" src="figure/diag_test_scen_3.svg" /></p>
+</div>
+<div id="diagnostic-test-performance" class="titleslide slide section level1"><h1>Diagnostic Test Performance</h1></div><div id="description" class="slide section level2">
+<h1>Description</h1>
+<ul>
+<li>In already classified patients (Good or Poor), we run <code>s100b</code> assay</li>
+<li>We get <strong>continuous data</strong> from the diagnostic test (<code>s100b</code> assay)</li>
+</ul>
+<table style="text-align:center">
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+s100b
+</td>
+<td>
+outcome
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+1
+</td>
+<td>
+-2.040
+</td>
+<td>
+Good
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+2
+</td>
+<td>
+-1.966
+</td>
+<td>
+Good
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+3
+</td>
+<td>
+-2.303
+</td>
+<td>
+Good
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+4
+</td>
+<td>
+-3.219
+</td>
+<td>
+Good
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+5
+</td>
+<td>
+-2.040
+</td>
+<td>
+Poor
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+6
+</td>
+<td>
+-2.303
+</td>
+<td>
+Poor
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+7
+</td>
+<td>
+-0.755
+</td>
+<td>
+Good
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+8
+</td>
+<td>
+-1.833
+</td>
+<td>
+Poor
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+9
+</td>
+<td>
+-1.715
+</td>
+<td>
+Good
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+10
+</td>
+<td>
+-2.303
+</td>
+<td>
+Good
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+</table>
+</div><div id="graphical-representation" class="slide section level2">
+<h1>Graphical Representation</h1>
+<p><img src="presentation_files/figure-slidy/unnamed-chunk-7-1.png" width="50%" style="display: block; margin: auto;" /></p>
+<p style="text-align:center">
+Higher values of s100b are associated with Poor class
+</p>
+</div><div id="decision-boundary" class="slide section level2">
+<h1>Decision boundary</h1>
+<ul>
+<li><strong>Decision boundary</strong> is the boundary which is used by the diagnostic test to classify an entity to one of the class (Good or Poor). <strong>Cut off</strong> for one variable diagnostic test</li>
+</ul>
+<p><img src="presentation_files/figure-slidy/unnamed-chunk-8-1.png" width="40%" style="display: block; margin: auto;" /></p>
+<p style="text-align:center">
+<strong>Mistakes</strong> are committed by the diagnostic test
+</p>
+</div><div id="how-to-choose-best-decision-boundary-cut-off" class="slide section level2">
+<h1>How to choose best decision boundary (Cut Off)?</h1>
+<ul>
+<li><strong>Theoretical Basis and Clinical Usefulness:</strong> Based on the subject knowledge, previous studies, cost of making mistakes in classification.</li>
+<li><strong>Data Driven:</strong>
+<ul>
+<li>ROC curve based</li>
+<li>Classifiers: LRM, LDA, QDA, RF, SVM</li>
+<li>Danger of <strong>over fitting</strong> to the training data</li>
+<li>Based on maximising/minimising some metric</li>
+</ul></li>
+</ul>
+</div><div id="let-us-take-cut-off-as--1" class="slide section level2">
+<h1>Let us take cut off as -1</h1>
+<ul>
+<li><strong>Crosstabulation</strong></li>
+</ul>
+<table style="text-align:center">
+<tr>
+<td colspan="4" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+pred_outcome
+</td>
+<td>
+Good
+</td>
+<td>
+Poor
+</td>
+</tr>
+<tr>
+<td colspan="4" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+1
+</td>
+<td>
+Pred_Good
+</td>
+<td>
+63
+</td>
+<td>
+24
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+2
+</td>
+<td>
+Pred_Poor
+</td>
+<td>
+9
+</td>
+<td>
+17
+</td>
+</tr>
+<tr>
+<td colspan="4" style="border-bottom: 1px solid black">
+</td>
+</tr>
+</table>
+<ul>
+<li>The diagnostic test commits many mistakes</li>
+</ul>
+</div><div id="understanding-crosstabulation" class="slide section level2">
+<h1>Understanding Crosstabulation</h1>
+<p><img src="figure/crosstab_1.svg" width="90%" style="display: block; margin: auto;" /></p>
+<ul>
+<li><strong>Sensitivity:</strong> True Positives</li>
+<li><strong>Specificity:</strong> True Negatives</li>
+</ul>
+</div><div id="combining-performances-across-both-classes" class="slide section level2">
+<h1>Combining performances across both classes</h1>
+<p><img src="figure/crosstab_3.svg" width="40%" style="display: block; margin: auto;" /></p>
+<ul>
+<li><p>Depicts discriminatory performance</p></li>
+<li><strong>Likelihood Ratio</strong>
+<ul>
+<li><strong>Positive LR:</strong> (Proportion of tests positive for Class 1 in patients belonging to Class 1)/(Proportion of tests positive for Class 1 in patients not belonging to Class 1)
+<ul>
+<li><strong>Sensitivity/(1 - Specificity)</strong> = 0.875/(1 - 0.415) = <strong>1.495</strong></li>
+</ul></li>
+<li><strong>Negative LR:</strong> (Proportion of tests negative for Class 1 in patients belonging to Class 1)/(Proportion of tests negative for Class 1 in patients not belonging to Class 1)
+<ul>
+<li><strong>(1 - Sensitivity)/Specificity</strong> = (1 - 0.875)/0.415 = <strong>0.301</strong></li>
+</ul></li>
+</ul></li>
+</ul>
+</div><div id="relevance-of-likelihood-ratios" class="slide section level2">
+<h1>Relevance of Likelihood Ratios</h1>
+<br/><br/>
+<p style="text-align:center">
+<strong>Posttest Odds of being in Class 1 given test positive for Class 1 = Pretest Odds of being in Class 1 x Positive LR</strong>
+</p>
+<p style="text-align:center">
+<strong>Posttest Odds of being in Class 1 given test negative for Class 1 = Pretest Odds of being in Class 1 x Negative LR</strong>
+</p>
+<ul>
+<li><p>Higher Positive LR increases the chance that patient belongs to class 1, if test is positive for class 1 (10)</p></li>
+<li><p>Lower Negative LR decreases the chance that patient belongs to class 1, if test is negative for class 1 (0.1)</p></li>
+<li><p><strong>We need to know about <a href="#(9)">pretest prevalence of disease</a></strong> to know about the post test prevalence of disease (OUR PRIMARY INTEREST)</p></li>
+</ul>
+</div>
+<div id="combining-performance-of-diagnostic-test-across-multiple-cut-offs" class="titleslide slide section level1"><h1>Combining performance of Diagnostic Test across multiple Cut Offs</h1></div><div id="receiver-operator-characteristic-roc" class="slide section level2">
+<h1>Receiver Operator Characteristic (ROC)</h1>
+<ul>
+<li>Across all the possible cut off values, we calculate sensitivity and specificity</li>
+</ul>
+<table style="text-align:center">
+<tr>
+<td colspan="4" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+cut_offs
+</td>
+<td>
+sensitivity
+</td>
+<td>
+specificity
+</td>
+</tr>
+<tr>
+<td colspan="4" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+1
+</td>
+<td>
+-3.3627
+</td>
+<td>
+0.9756
+</td>
+<td>
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+2
+</td>
+<td>
+-3.1073
+</td>
+<td>
+0.9756
+</td>
+<td>
+0.0694
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+3
+</td>
+<td>
+-2.9046
+</td>
+<td>
+0.9756
+</td>
+<td>
+0.1111
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+4
+</td>
+<td>
+-2.1638
+</td>
+<td>
+0.7561
+</td>
+<td>
+0.5417
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+5
+</td>
+<td>
+-2.0802
+</td>
+<td>
+0.7317
+</td>
+<td>
+0.5417
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+6
+</td>
+<td>
+-2.0032
+</td>
+<td>
+0.6829
+</td>
+<td>
+0.5833
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+7
+</td>
+<td>
+-1.0087
+</td>
+<td>
+0.4146
+</td>
+<td>
+0.875
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+8
+</td>
+<td>
+-0.9296
+</td>
+<td>
+0.4146
+</td>
+<td>
+0.8889
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+9
+</td>
+<td>
+-0.8678
+</td>
+<td>
+0.3902
+</td>
+<td>
+0.8889
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+10
+</td>
+<td>
+-0.0958
+</td>
+<td>
+0.0488
+</td>
+<td>
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+11
+</td>
+<td>
+0.3434
+</td>
+<td>
+0.0244
+</td>
+<td>
+1
+</td>
+</tr>
+<tr>
+<td colspan="4" style="border-bottom: 1px solid black">
+</td>
+</tr>
+</table>
+<ul>
+<li>Plot graph with (1 - specificity) on X axis, and sensitivity on Y axis</li>
+</ul>
+<p><img src="presentation_files/figure-slidy/unnamed-chunk-14-1.png" width="50%" style="display: block; margin: auto;" /></p>
+</div><div id="uses-of-roc-area-under-roc" class="slide section level2">
+<h1>Uses of ROC: Area under ROC</h1>
+<p><img src="presentation_files/figure-slidy/unnamed-chunk-15-1.png" width="60%" style="display: block; margin: auto;" /></p>
+</div><div id="meaning-of-auroc" class="slide section level2">
+<h1>Meaning of AUROC</h1>
+<ul>
+<li>Discriminatory performance of <strong>logistic regression model</strong> with the values of diagnostic test as co-variate.</li>
+</ul>
+<table style="text-align:center">
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+outcome
+</td>
+<td>
+predicted_prob
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+1
+</td>
+<td>
+Good
+</td>
+<td>
+0.2847
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+2
+</td>
+<td>
+Good
+</td>
+<td>
+0.3019
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+3
+</td>
+<td>
+Good
+</td>
+<td>
+0.2288
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+4
+</td>
+<td>
+Good
+</td>
+<td>
+0.0961
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+5
+</td>
+<td>
+Poor
+</td>
+<td>
+0.2847
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+6
+</td>
+<td>
+Poor
+</td>
+<td>
+0.2288
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+7
+</td>
+<td>
+Good
+</td>
+<td>
+0.6267
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+8
+</td>
+<td>
+Poor
+</td>
+<td>
+0.3343
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+9
+</td>
+<td>
+Good
+</td>
+<td>
+0.3643
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+10
+</td>
+<td>
+Good
+</td>
+<td>
+0.2288
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+</table>
+<ul>
+<li><strong>Meaning:</strong>
+<ul>
+<li>Randomly selecting persons belonging to and not belonging to a class</li>
+<li>Proportion of times model correctly assigns higher probability to person belonging to the said class than to person not belonging to the said class</li>
+</ul></li>
+<li>AUROC in our example is 0.7314</li>
+</ul>
+<p><img src="presentation_files/figure-slidy/unnamed-chunk-18-1.png" width="40%" style="display: block; margin: auto;" /></p>
+</div><div id="uses-of-roc-finding-cut-offs" class="slide section level2">
+<h1>Uses of ROC: Finding Cut offs</h1>
+<p style="text-align:center">
+<strong>ROC curves should never be used to find cut offs</strong>
+</p>
+</div>
+<div id="comparing-two-diagnostic-tests" class="titleslide slide section level1"><h1>Comparing two diagnostic tests</h1></div><div id="comparing-diagnostic-performance-when-cut-offs-are-predetermined" class="slide section level2">
+<h1>Comparing diagnostic performance when cut offs are predetermined</h1>
+<ul>
+<li><p>Diagnostic Test 2: Nucleoside diphosphate kinase A (NDKA)</p></li>
+<li><p>Let us say, the cut off is 2.5</p></li>
+</ul>
+<table style="text-align:center">
+<tr>
+<td colspan="6" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+var
+</td>
+<td>
+sensitivity
+</td>
+<td>
+specificity
+</td>
+<td>
+pos_lr
+</td>
+<td>
+neg_lr
+</td>
+</tr>
+<tr>
+<td colspan="6" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+1
+</td>
+<td>
+s100b
+</td>
+<td>
+0.4146
+</td>
+<td>
+0.875
+</td>
+<td>
+3.3171
+</td>
+<td>
+0.669
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+2
+</td>
+<td>
+ndka
+</td>
+<td>
+0.6098
+</td>
+<td>
+0.5556
+</td>
+<td>
+1.372
+</td>
+<td>
+0.7024
+</td>
+</tr>
+<tr>
+<td colspan="6" style="border-bottom: 1px solid black">
+</td>
+</tr>
+</table>
+</div><div id="comparing-overall-diagnostic-performance" class="slide section level2">
+<h1>Comparing overall diagnostic performance</h1>
+<p><img src="presentation_files/figure-slidy/unnamed-chunk-20-1.png" width="60%" style="display: block; margin: auto;" /></p>
+<pre><code>## 
+##  DeLong&#39;s test for two correlated ROC curves
+## 
+## data:  roc_s100b and roc_ndka
+## Z = 1.3908, p-value = 0.1643
+## alternative hypothesis: true difference in AUC is not equal to 0
+## sample estimates:
+## AUC of roc1 AUC of roc2 
+##   0.7313686   0.6119580</code></pre>
+</div>
+<div id="reliability-analysis" class="titleslide slide section level1"><h1>Reliability Analysis</h1></div><div id="concept" class="slide section level2">
+<h1>Concept</h1>
+<p><img src="figure/irr.svg" width="70%" style="display: block; margin: auto;" /></p>
+<ul>
+<li><p><strong>Repeated measurements</strong> of a <strong>given attribute</strong> of <strong>different entities</strong> (subjects)</p></li>
+<li><p>Measurements can be by <strong>different entities</strong> (raters) or are <strong>repeated measurements</strong> by same entity (rater)</p></li>
+<li><p><strong>Raters</strong> can be decomposed into <strong>humans</strong> and <strong>machines</strong></p></li>
+<li><p>Raters are <strong>fixed</strong> or are a <strong>random sample</strong> from a big population. Subjects are always a random sample from a big population</p></li>
+<li><p><strong>Single rater, multiple measurements: </strong> Rater effect is always fixed</p></li>
+<li><p>Measurements can be <strong>categorical</strong>, <strong>nominal</strong> or <strong>continuous</strong></p></li>
+<li><p><strong>Aim: </strong> To find out magnitude of <strong>inter-measurement variation</strong></p></li>
+</ul>
+</div><div id="categorical-measurement" class="slide section level2">
+<h1>Categorical Measurement</h1>
+<ul>
+<li><strong>Agreement between 2 raters (Cohen’s Kappa)</strong></li>
+</ul>
+<p><img src="figure/kappa.svg" width="50%" style="display: block; margin: auto;" /></p>
+</div><div id="continuous-measurement-intraclass-correlation" class="slide section level2">
+<h1>Continuous Measurement: Intraclass Correlation</h1>
+</div><div id="decomposition-of-unbiased-measurement" class="slide section level2">
+<h1>Decomposition of unbiased measurement</h1>
+<p><span class="math display">\[
+Val_{obs} = Val_{true} + Error  
+\]</span></p>
+<ul>
+<li><strong>True value</strong> is usually not known. Usually estimated from the mean of repeated measures</li>
+</ul>
+</div><div id="decomposition-of-error" class="slide section level2">
+<h1>Decomposition of Error</h1>
+<p><span class="math display">\[
+Error = Error_{rater} + Error_{instrument} + Error_{unexplainable}
+\]</span></p>
+<ul>
+<li>As we decompose the error into more and more groups, unexplainable error is minimised</li>
+</ul>
+</div><div id="decomposition-of-variance" class="slide section level2">
+<h1>Decomposition of Variance</h1>
+<ul>
+<li><p>Variance is measure of dispersion of individual measurements from mean</p></li>
+<li><p><strong>Mean</strong> can be of <strong>total</strong> measurements, measurements <strong>within each subject</strong> and measurements <strong>by each rater</strong></p></li>
+</ul>
+<p><span class="math display">\[
+Var_{total} = Var_{between-subject} + Var_{between-rater} + Var_{rest}
+\]</span></p>
+</div><div id="definition-of-icc" class="slide section level2">
+<h1>Definition of ICC</h1>
+<p><span class="math display">\[
+ICC = Var_{between-subject}/(Var_{between-subject} + 
+Var_{between-rater} + Var_{rest})
+\]</span></p>
+<ul>
+<li><p>ICC: between 0 to 1</p></li>
+<li><p>&lt; 0.5 is poor reliability</p></li>
+<li><strong>Causes of poor reliability</strong>
+<ul>
+<li>Less variation between subjects</li>
+<li>Increased variation between raters</li>
+<li>Increased unexplainable errors</li>
+</ul></li>
+<li><p><strong>Data: </strong> Anxiety score by three raters on 20 subjects</p></li>
+</ul>
+<table style="text-align:center">
+<tr>
+<td colspan="4" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+rater1
+</td>
+<td>
+rater2
+</td>
+<td>
+rater3
+</td>
+</tr>
+<tr>
+<td colspan="4" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+1
+</td>
+<td>
+3
+</td>
+<td>
+3
+</td>
+<td>
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+2
+</td>
+<td>
+3
+</td>
+<td>
+6
+</td>
+<td>
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+3
+</td>
+<td>
+3
+</td>
+<td>
+4
+</td>
+<td>
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+4
+</td>
+<td>
+4
+</td>
+<td>
+6
+</td>
+<td>
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+5
+</td>
+<td>
+5
+</td>
+<td>
+2
+</td>
+<td>
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+6
+</td>
+<td>
+5
+</td>
+<td>
+4
+</td>
+<td>
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+7
+</td>
+<td>
+2
+</td>
+<td>
+2
+</td>
+<td>
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+8
+</td>
+<td>
+3
+</td>
+<td>
+4
+</td>
+<td>
+6
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+9
+</td>
+<td>
+5
+</td>
+<td>
+3
+</td>
+<td>
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+10
+</td>
+<td>
+2
+</td>
+<td>
+3
+</td>
+<td>
+1
+</td>
+</tr>
+<tr>
+<td colspan="4" style="border-bottom: 1px solid black">
+</td>
+</tr>
+</table>
+<ul>
+<li><strong>Graphical Representation</strong></li>
+</ul>
+<p><img src="presentation_files/figure-slidy/unnamed-chunk-26-1.png" width="80%" style="display: block; margin: auto;" /></p>
+<p><img src="presentation_files/figure-slidy/unnamed-chunk-27-1.png" width="50%" style="display: block; margin: auto;" /></p>
+</div><div id="calculating-icc" class="slide section level2">
+<h1>Calculating ICC</h1>
+<ul>
+<li><strong>Models of the ICC: Random and Fixed Effects</strong>
+<ul>
+<li><strong>One Way model (Model 1): </strong> Different sets of raters are measuring different subjects. Variance among raters not measurable.</li>
+<li><strong>Two Way Random Effect Model (Model 2): </strong> Same set of raters are measuring in all the subjects. Raters are considered to be random sample from a population of raters with similar characters</li>
+<li><strong>Two Way Mixed Effect Model (Model 3): </strong> Same set of raters are measuring in all the subjects, but raters will be the same for future measurements, so they are not considered to be a random sample. Multiple measurements by same rater also analysed by the same model</li>
+</ul></li>
+<li><strong>Forms of the ICC: Single and Average Ratings</strong>
+<ul>
+<li>Usually, reliability studies are based on comparison of measurements from individual raters (Single, 1)</li>
+<li>In case of unstable measurements, average of measurements is used for calculating reliability (Average, k)</li>
+</ul></li>
+<li><strong>Absolute Agreement vs Consistency</strong>
+<ul>
+<li>Model 2: Absolute Agreement</li>
+<li>Model 3: Consistency</li>
+</ul></li>
+<li><strong>Given Example</strong>
+<ul>
+<li>Model 2 (random raters and subjects)</li>
+<li>Individual measurements (1)</li>
+<li>Absolute Agreement</li>
+</ul></li>
+</ul>
+<pre><code>##  Single Score Intraclass Correlation
+## 
+##    Model: twoway 
+##    Type : agreement 
+## 
+##    Subjects = 20 
+##      Raters = 3 
+##    ICC(A,1) = 0.198
+## 
+##  F-Test, H0: r0 = 0 ; H1: r0 &gt; 0 
+##  F(19,39.7) = 1.83 , p = 0.0543 
+## 
+##  95%-Confidence Interval for ICC Population Values:
+##   -0.039 &lt; ICC &lt; 0.494</code></pre>
+</div><div id="continuous-measurement-2-measurers-difference-in-measurements" class="slide section level2">
+<h1>Continuous Measurement: 2 measurers, difference in measurements</h1>
+<ul>
+<li>Say, a new method is measuring ndka. We want to see, if the measurements by new method agrees with the older method.</li>
+</ul>
+<table style="text-align:center">
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+old
+</td>
+<td>
+new
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+1
+</td>
+<td>
+1.1019
+</td>
+<td>
+1.1015
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+2
+</td>
+<td>
+2.1448
+</td>
+<td>
+2.2711
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+3
+</td>
+<td>
+2.0906
+</td>
+<td>
+2.1748
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+4
+</td>
+<td>
+2.3437
+</td>
+<td>
+2.6211
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+5
+</td>
+<td>
+2.8565
+</td>
+<td>
+2.9799
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+6
+</td>
+<td>
+2.5455
+</td>
+<td>
+2.7093
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+7
+</td>
+<td>
+1.7918
+</td>
+<td>
+1.7754
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+8
+</td>
+<td>
+2.5802
+</td>
+<td>
+2.8231
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+9
+</td>
+<td>
+2.7434
+</td>
+<td>
+2.6784
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+10
+</td>
+<td>
+1.7934
+</td>
+<td>
+1.8215
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+</table>
+<ul>
+<li><strong>Scatterplot</strong></li>
+</ul>
+<p><img src="presentation_files/figure-slidy/unnamed-chunk-31-1.png" width="60%" style="display: block; margin: auto;" /></p>
+<ul>
+<li>For perfect agreement between both methods, the points need to be on the black line</li>
+</ul>
+</div><div id="incorrect-use-of-correlation-coefficient" class="slide section level2">
+<h1>Incorrect use of correlation coefficient</h1>
+<pre><code>## 
+##  Pearson&#39;s product-moment correlation
+## 
+## data:  ndka_df$old and ndka_df$new
+## t = 36.283, df = 111, p-value &lt; 2.2e-16
+## alternative hypothesis: true correlation is not equal to 0
+## 95 percent confidence interval:
+##  0.9428688 0.9725325
+## sample estimates:
+##       cor 
+## 0.9603319</code></pre>
+<p style="text-align:center">
+Linearly correlated <strong>does not</strong> mean presence of agreement
+</p>
+<ul>
+<li><p>We have <strong>perfect agreement</strong> only if the points lie along the <strong>line of equality</strong> (they donot have any difference), but we will have <strong>perfect correlation</strong> if the points lie along <strong>any straight line</strong></p></li>
+<li><p><strong>Change in scale of measurement</strong> does not affect the correlation, but it affects the agreement</p></li>
+</ul>
+</div><div id="bland-and-altman-method-analysis-of-difference" class="slide section level2">
+<h1>Bland and Altman Method: Analysis of Difference</h1>
+<ul>
+<li>Plot of <strong>difference between measurements</strong> with <strong>mean of measurements</strong></li>
+</ul>
+<p><img src="presentation_files/figure-slidy/unnamed-chunk-33-1.png" width="40%" style="display: block; margin: auto;" /></p>
+<ul>
+<li><strong>Bias: Mean of difference is different from 0</strong>
+<ul>
+<li>On an average, method new is 0.099 units more than method old</li>
+</ul></li>
+</ul>
+</div><div id="bland-and-altman-method-analysis-of-difference-contd" class="slide section level2">
+<h1>Bland and Altman Method: Analysis of Difference (contd)</h1>
+<ul>
+<li>Distribution of differences</li>
+</ul>
+<pre><code>## 
+##  Shapiro-Wilk normality test
+## 
+## data:  ba_df$diffs
+## W = 0.98909, p-value = 0.5018</code></pre>
+<ul>
+<li><p>Differences are normally distributed</p></li>
+<li><p>The difference between new and old methods <strong>can vary</strong> between -0.291 and 0.49 95% of the times</p></li>
+</ul>
+</div><div id="bland-and-altman-method-analysis-of-difference-contd-1" class="slide section level2">
+<h1>Bland and Altman Method: Analysis of Difference (contd)</h1>
+<ul>
+<li><strong>Is the bias significant?</strong>
+<ul>
+<li>We can answer by looking at 95% CI of the bias</li>
+<li>95% CI is 0.0622 to 0.1365</li>
+<li><strong>Bias is significant, as line of equality (0) is not in the 95% CI</strong></li>
+</ul></li>
+<li><strong>Defining acceptable agreement limit?</strong>
+<ul>
+<li>Define <strong>a priori</strong> the limits of maximum acceptable differences (limits of agreement expected), <strong>based on biologically and analytically relevant criteria</strong></li>
+<li>Plot is to be used just to see, if the limits of agreement exceeds that of the maximum acceptable limit</li>
+</ul></li>
+<li><strong>95% CI of limits of agreement</strong>
+<ul>
+<li>Upper limit: 0.4255 to 0.5541</li>
+<li>Lower limit: -0.3554 to -0.2267</li>
+</ul></li>
+</ul>
+</div><div id="bland-and-altman-method-analysis-of-difference-contd-2" class="slide section level2">
+<h1>Bland and Altman Method: Analysis of Difference (contd)</h1>
+<ul>
+<li><strong>Final Plot</strong></li>
+</ul>
+<p><img src="presentation_files/figure-slidy/unnamed-chunk-35-1.png" width="40%" style="display: block; margin: auto;" /></p>
+<ul>
+<li>Assess non linearity and unequal variances</li>
+</ul>
+</div><div id="thank-you" class="slide section level2">
+<h1>Thank you</h1>
+<ul>
+<li>R 3.4.1</li>
+<li>tidyverse, rmarkdown, slidy.js, pROC, stargazer, BlandAltmanLeh, irr packages</li>
+</ul>
+</div>
+
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "presentation_files/mathjax-local/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+</body>
+</html>
