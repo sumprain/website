@@ -17,7 +17,7 @@ weight = 61
 
 ## My wife
 
-My wife, **Mom Das** is a great person, a master DIY specialist. She is an ace painter, designer, cook and craft person.
+My wife, **Mom Das** is a great person, a master DIY specialist and tool maker. She is an ace painter, designer, cook and craft person.
 
 Visit the [blog site](https://momdaslifehandmade.blogspot.in/) maintained by her.
 
