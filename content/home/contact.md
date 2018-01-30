@@ -15,4 +15,4 @@ autolink = true
 
 +++
 
-{{< googleform src="1FAIpQLScWFmRZ5PMkOn4Jb_kGE9pD3DoUH1pEF3SPk1yTNIbfRdy4dA" width="760" height="865" >}}
+[Click here]({{< ref "misc/contact_form.md" >}}) to enter your email to contact me.
