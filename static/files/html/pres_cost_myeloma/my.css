@@ -1,0 +1,14 @@
+body { font-family: 'Ubuntu', 'Droid Serif', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif; }
+
+h1, h2, h3 {
+  font-family: 'Yanone Kaffeesatz';
+  font-weight: normal;
+}
+.remark-code, .remark-inline-code { font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace; }
+
+.title-slide {
+  background-image: url(figs/dept_logo.png);
+  background-position: right 20px top 20px;
+  background-size: 100px 100px;
+
+}
