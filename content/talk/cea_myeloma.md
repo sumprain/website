@@ -1,12 +1,12 @@
 +++
-title = "Cost effect analysis of second line therapy in Relapsed Refractory Multiple Myeloma in India"
+title = "Cost effect analysis of second line therapy in Relapsed Refractory Multiple Myeloma in Indian Scenario"
 date = 2018-01-28T22:04:54+05:30  # Schedule page publish date.
 draft = false
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-time_start = 2018-02-10T15:30:00+05:30
-time_end = 2018-02-10T15:45:00+05:30
+time_start = 2018-02-10T16:00:00+05:30
+time_end = 2018-02-10T16:15:00+05:30
 
 # Abstract and optional shortened version.
 abstract = ""
@@ -34,7 +34,7 @@ tags = ["myeloma", "cost effective analysis", "second line therapy", "hematology
 
 # Links (optional).
 url_pdf = ""
-url_slides = ""
+url_slides = "files/html/pres_cost_myeloma/presentation_actual.html"
 url_video = ""
 url_code = ""
 
