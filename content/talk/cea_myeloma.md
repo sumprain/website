@@ -36,7 +36,7 @@ tags = ["myeloma", "cost effective analysis", "second line therapy", "hematology
 url_pdf = ""
 url_slides = "files/html/pres_cost_myeloma/presentation_actual.html"
 url_video = ""
-url_code = ""
+url_code = "https://github.com/sumprain/myeloma_cost_effectiveness"
 
 # Does the content use math formatting?
 math = false
