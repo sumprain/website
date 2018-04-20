@@ -34,7 +34,7 @@ tags = ["hematology", "thrombosis"]
 
 # Links (optional).
 url_pdf = ""
-url_slides = ""
+url_slides = "files/html/aiims_bleed/presentation_actual.html"
 url_video = ""
 url_code = ""
 

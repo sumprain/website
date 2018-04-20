@@ -40,4 +40,6 @@ caption = ""
 
 11. _Overview of Diagnostic Tests_, Lecture, **Biostatistics and Hands on Practice on Medical Data using SPSS** at ILBS, New Delhi, 18 Aug 2017.
 
-12. Workshop on _Using R and RStudio for Statistical Analysis_ at 2nd Annual Meeting of Bengal Society of Hematology at **NRS Medical College Kolkata**, 15 Dec 2017
+12. Workshop on _Using R and RStudio for Statistical Analysis_ at 2nd Annual Meeting of Bengal Society of Hematology at **NRS Medical College Kolkata**, 15 Dec 2017.
+
+13. Talk on _Bleeding and Thrombosis: A double edged sword_ at National Hematology Update XI at **Department of Hematology, All India Institute of Medical Sciences, New Delhi** on 15 Apr 2018.
