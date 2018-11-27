@@ -108,3 +108,14 @@ Oct;78(10):1211-5. doi: 10.1007/s12098-010-0300-1. Epub 2011 May 8. PubMed PMID:
 1. Maiwall R, Sarin SK, _Kumar S_, Jain P, Kumar G, Bhadoria AS, Moreau R, Kedarisetty CK, Abbas Z, Amarapurkar D, Bhardwaj A, Bihari C, Butt AS, Chan A, Chawla YK, Chowdhury A, Dhiman R, Dokmeci AK, Ghazinyan H, Hamid SS, Kim DJ, Komolmit P, Lau GK, Lee GH, Lesmana LA, Jamwal K, Mamun-Al-Mahtab, Mathur RP, Nayak SL, Ning Q, Pamecha V, Alcantara-Payawal D, Rastogi A, Rahman S, Rela M, Saraswat VA, Shah S, Shiha G, Sharma BC, Sharma MK, Sharma K, Tan SS, Chandel SS, Vashishtha C, Wani ZA, Yuen MF, Yokosuka O, Duseja A, Jafri W, Devarbhavi H, Eapen CE, Goel A, Sood A, Ji J, Duan Z, Chen Y; of the APASL ACLF Research Consortium (AARC) working party. Development of predisposition, injury, response, organ failure model for predicting acute kidney injury in acute on chronic liver failure. Liver Int. 2017 Oct;37(10):1497-1507. doi: 10.1111/liv.13443. Epub 2017 Aug 2.
 
 1. Kapoor R, Kumar R, Mahapatra M, Pati HP, _Pramanik SK_. Low Dose Rituximab in Chronic ITP: Still an Option in Resource Limited Settings. Indian J Hematol Blood Transfus. 2017 Dec;33(4):568-573. doi: 10.1007/s12288-016-0764-x. Epub 2016 Dec 19.
+
+1.  Kotru M, Sharma R, _Pramanik SK_, Purohit A, et al. Value of CD16/CD66b/CD45 in comparison to CD55/CD59/CD45 in diagnosis of paroxysmal nocturnal haemoglobinuria: An Indian experience. Indian J Med Res. 2017 Sep;146(3):362-368. doi: 10.4103/ijmr.IJMR\_195\_14.
+
+1. Neema S, Banerjee D, _Pramanik SK_. Through the Lens: Cryoglobulinemia. Indian Dermatol Online J. 2018 Mar-Apr;9(2):135. doi: 10.4103/idoj.IDOJ_176_17.
+
+1. Dogra PM, Hooda AK, Shanmugraj G, _Pramanik SK_. Continuous Ambulatory Peritoneal Dialysis Catheter Insertion Technique: A Comparative Study of Percutaneous versus Surgical Insertion. Indian J Nephrol. 2018 Jul-Aug;28(4):291-297. doi: 10.4103/ijn.IJN\_144\_17.
+
+1. Yanamandra U, Bhattachar SA, Das SK, Yanamandra S, Kumari VKL, Ayekappam A, _Kumar S_, Malhotra P, Varma S, Varma N, Nair V. Hematological Parameters in Native Highlanders of Ladakh Aged 4-19 Years. Indian J Hematol Blood Transfus. 2018 Oct;34(4):731-738. doi: 10.1007/s12288-018-0967-4. Epub 2018 May 12.
+
+1. Yanamandra U, ..., _Kumar S_, ... (2018). Erythropoietin and ferritin response in native highlanders aged 4-19 years from the Leh-Ladakh region of India. British Journal of Haematology. doi: 10.1111/bjh.15553.
+ 

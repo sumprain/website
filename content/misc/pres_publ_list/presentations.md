@@ -43,3 +43,6 @@ caption = ""
 12. Workshop on _Using R and RStudio for Statistical Analysis_ at 2nd Annual Meeting of Bengal Society of Hematology at **NRS Medical College Kolkata**, 15 Dec 2017.
 
 13. Talk on _Bleeding and Thrombosis: A double edged sword_ at National Hematology Update XI at **Department of Hematology, All India Institute of Medical Sciences, New Delhi** on 15 Apr 2018.
+
+14. Workshop on _Research Methodology_ at Neurology Update at **Department of Neurology, Army Hospital (Research and Referral), New Delhi** on 03 Nov 2018.
+
