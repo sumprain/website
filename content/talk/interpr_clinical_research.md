@@ -9,8 +9,7 @@ time_start = 2019-09-15T16:30:00+05:30
 time_end = 2019-09-15T17:00:00+05:30
 
 # Abstract and optional shortened version.
-abstract = "The talk will deal with interpretation of results of clinical research with special 
-emphasis of the meaning of p value and the ways in which it is misused"
+abstract = "The talk will deal with interpretation of results of clinical research with special emphasis of the meaning of p value and the ways in which it is misused"
 abstract_short = ""
 
 # Name of event and optional event URL.
