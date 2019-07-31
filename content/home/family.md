@@ -19,7 +19,9 @@ weight = 61
 
 My wife, **Mom Das** is a great person, a master DIY specialist and tool maker. She is an ace painter, designer, cook and craft person.
 
-Visit the [blog site](https://momdaslifehandmade.blogspot.in/) maintained by her.
+Visit the [blog site (old)](https://momdaslifehandmade.blogspot.in/) and [blog site (new)](https://momdaslifehandmade.netlify.com)  maintained by her.
+
+Visit her [MomDas Life Handmade (Youtube Channel)](https://www.youtube.com/momdaslifehandmade).
 
 She also has a store [**Artistically Yours**](https://www.zazzle.com/artistically_yours?rf=238594976192841402) at [Zazzle](https://www.zazzle.com/).
 

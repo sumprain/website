@@ -118,4 +118,5 @@ Oct;78(10):1211-5. doi: 10.1007/s12098-010-0300-1. Epub 2011 May 8. PubMed PMID:
 1. Yanamandra U, Bhattachar SA, Das SK, Yanamandra S, Kumari VKL, Ayekappam A, _Kumar S_, Malhotra P, Varma S, Varma N, Nair V. Hematological Parameters in Native Highlanders of Ladakh Aged 4-19 Years. Indian J Hematol Blood Transfus. 2018 Oct;34(4):731-738. doi: 10.1007/s12288-018-0967-4. Epub 2018 May 12.
 
 1. Yanamandra U, ..., _Kumar S_, ... (2018). Erythropoietin and ferritin response in native highlanders aged 4-19 years from the Leh-Ladakh region of India. British Journal of Haematology. doi: 10.1111/bjh.15553.
- 
+
+1. Yanamandra U, ..., _Kumar S_, ... (2019). Anthropometric evaluation of school-going native highlanders (4-19 years of age) from the Leh-Ladakh region in India. Int J Adolesc Med Health. doi: 10.1515/ijamh-2018-0253.

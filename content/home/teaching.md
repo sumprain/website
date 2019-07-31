@@ -16,3 +16,5 @@ weight = 60
 +++
 
 I am an **Associate Professor in Medicine** for Delhi University.
+
+I am qualified teacher in **Bioethics**

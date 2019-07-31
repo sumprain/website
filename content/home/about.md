@@ -11,9 +11,11 @@ weight = 5
 [interests]
   interests = [
     "R",
+    "Python",
     "Data Analysis",
     "Hematology",
-    "Stem Cell Transplantation"
+    "Stem Cell Transplantation",
+    "Bioethics"
   ]
 
 # List your qualifications (such as academic degrees).
@@ -47,6 +49,26 @@ weight = 5
   institution = "eDX: HarvardX"
   year = 2013
 
+[[education.courses]]
+  course = "Computing for Data Analysis"
+  institution = "John Hopkins University (Coursera)"
+  year = 2013
+
+[[education.courses]]
+   course = "Basic Course Workshop in Medical Education Technologies"
+   institution = "Maharashtra University of Medical Sciences"
+   year = 2013
+
+[[education.courses]]
+  course = "Armed Forces Medical Services Training Workshop for Ethics Workshop for Ethics Committee"
+  institution = "FERCI"
+  year = 2018
+
+[[education.courses]]
+  course = "3T - IBHSc Training Course for Health Science Faculty"
+  institution = "The Indian Program of the UNESCO Chair in Bioethics (Haifa)"
+  year = 2019
+
 +++
 
 # Biography
@@ -56,9 +78,9 @@ Suman Kumar Pramanik is alumnus of [Armed Forces Medical College](http://afmc.ni
 He is presently working as Clnical Hematologist at Army Hospital 
 (Research and Referral), New Delhi.
 
-He is passionately involved in Data Analysis with [R](https://www.r-project.org/).
+He is passionately involved in Data Analysis with [R](https://www.r-project.org/) and [Python](https://www.python.org).
 
-He programs in R and C++.
+He programs in R, C++ and Python.
 
 Here are the [list of publications]({{< ref "misc/pres_publ_list/publications.md" >}})
 
