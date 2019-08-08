@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Suman Kumar Pramanik" />
+  <meta name="dcterms.date" content="2019-08-09" />
+  <title>Essentials of Sample Size Calculation</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.css"/>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/simple.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">Essentials of Sample Size Calculation</h1>
+    <h2 class="author">Col Suman Kumar Pramanik</h2>
+    <h3 class="date">09 Aug 2019</h3>
+</section>
+
+<section id="introduction" class="slide level2">
+<h2>Introduction</h2>
+<ul>
+<li><p>Sample Size Calculation is the fundamental requirement before carrying out any <strong>Inferential Study</strong></p></li>
+<li><p>Requires an understanding of the <strong>study design</strong> and a <strong>rough estimate</strong> of the <strong>desired parameters</strong></p></li>
+</ul>
+<aside class="notes" data-markdown>
+<p>As the season of AFMRC projects and thesis submission of residents are nearing, so is the exercise of sample size calculation.</p>
+<p>Good afternoon everybody, today I will be deliberating on the fundamentals of role of sample size in conducting studies and will dwelve upon the sample size calculation of commonly used study designs.</p>
+<p>Calculating sample size is a fundamental requirement before carrying out any inferential study, which means inferring population from the sample.</p>
+As we will be seeing through this lecture, it requires understanding of study design and also a rough estimate of the population parameters.
+</aside>
+</section>
+<section id="population-and-sample" class="slide level2">
+<h2>Population and Sample</h2>
+<ul>
+<li><p><strong>Population is usually hypothetical, often not well quantified</strong></p>
+<ul>
+<li>Males in India, Elderly females in India</li>
+</ul></li>
+<li><p><strong>Our aim is to find about any attribute of the population</strong></p>
+<ul>
+<li><p>Prevalence of Heart Attack, Chances of surviving after Lung Cancer at the end of 1 year</p></li>
+<li><p>Mean age of males having 1st episode of Acute Coronary Syndrome</p></li>
+</ul></li>
+<li><p><strong>We estimate it by studying a sample from the population</strong></p></li>
+</ul>
+<aside class="notes" data-markdown>
+<p>Before we proceed further, we must be able to differentiate between population and sample.</p>
+<p>Population is a concept or something very big which cannot be usually counted exactly, and despite our efforts, not well defined. We want to know something about the population (some attribute), but we donot have any direct mean of doing so. Some of the attributes may be prevalence of Heart Attack in Indian population, chances of surviving at the end of 1 year after Lung Cancer in Indians, mean age of males having first episode of Acute Corenary Syndrome all across globe.</p>
+<p>We can, at the best, estimate the population attribute from collected sample with some acceptable error.</p>
+</aside>
+</section>
+<section id="central-dogma-of-inferential-statistics" class="slide level2">
+<h2>Central Dogma of Inferential Statistics</h2>
+<ul>
+<li><p>POPULATION <span class="math inline">\(\rightarrow\)</span> SAMPLE</p></li>
+<li><p>ESTIMATE POPULATION <span class="math inline">\(\leftarrow\)</span> SAMPLE</p></li>
+<li><p>What we get is an <strong>Estimate of Actuality</strong> from studying a sample</p></li>
+</ul>
+<aside class="notes" data-markdown>
+<p>We should understand that the sample arises from the population but in inferential statistics, we are trying to estimate the population from sample.</p>
+The sample which is an acceptable representation of the underlying population is the random sample.
+</aside>
+</section>
+<section id="what-is-a-random-sample" class="slide level2">
+<h2>What is a Random Sample?</h2>
+<ul>
+<li><p>All the entities from underlying population have <strong>equal chance of being selected</strong> for inclusion in the sample.</p></li>
+<li><p>Prior inclusion of any entity <strong>does not influence the chances</strong> of any of the entities being selected in future.</p></li>
+</ul>
+<aside class="notes" data-markdown>
+<p>A sample is called random sample if all the entities from the underlying population have equal chance of being selected for inclusion into the sample, and</p>
+if the selection process is independent, meaning that, prior inclusion of any entity in the sample doesnot influence the chances of any of the entities being selected in future.
+</aside>
+</section>
+<section><section id="simulation-one-population" class="title-slide slide level1"><h1>Simulation: One Population</h1><aside class="notes" data-markdown>
+To further understand the concept of the population, sample, population parameter, sample estimate, its precision and relation with sample size, let us take help of simulation study by computer.
+</aside></section><section id="scenario" class="slide level2">
+<h2>Scenario</h2>
+<ul>
+<li><p>Duration of remission after chemotherapy (exponential distribution)</p></li>
+<li><p><strong>Mean Duration:</strong> 5 months</p></li>
+<li><p>Our aim is to <strong>estimate mean remission duration</strong> of the underlying population</p></li>
+</ul>
+<aside class="notes" data-markdown>
+<p>We are dealing with patients with lung cancer and we want to characterise the duration of remission (disease free state) after chemotherapy (Standard of care).</p>
+We assume that the mean duration of those patients (population) is 5 months and the distribution is right skewed which can be modelled as exponential distribution.
+</aside>
+</section><section class="slide level2">
+
+<p><img src="presentation_ahrr_files/figure-revealjs/unnamed-chunk-3-1.png" width="768" /></p>
+<aside class="notes" data-markdown>
+<p>The graph shows the distribution of duration of remission in months with mean of 5 months. We can appreciate the extreme right skewness of the distribution. Majority of values will be quite short and few of the values will be quite long.</p>
+We can select random sample of any size from this population which we are doing the next.
+</aside>
+</section><section id="two-random-samples-size-100" class="slide level2">
+<h2>Two random samples (size = 100)</h2>
+<p><img src="presentation_ahrr_files/figure-revealjs/unnamed-chunk-4-1.png" width="768" /></p>
+<aside class="notes" data-markdown>
+<p>We select two random samples of 100 each from the underlying population and plot them as histograms over the underlying distribution.</p>
+<p>We appreciate that in real life when conducting study, we will have only one sample.</p>
+We also appreciate that both the random samples are different from each other, but general shape of the distribution remains same (right skewed)
+</aside>
+</section><section class="slide level2">
+
+<ul>
+<li><p>Both the random samples are different</p></li>
+<li><p>Blue Sample (Mean): 5.0369153</p></li>
+<li><p>Red Sample (Mean): 4.2188463</p></li>
+</ul>
+<aside class="notes" data-markdown>
+<p>We also see that the mean duration in both samples are different from each other and from the population mean of 5 months.</p>
+The sample mean will be distributed around the population mean with some spread.
+</aside>
+</section><section id="distribution-1000-of-sample-means-sample-size-10" class="slide level2">
+<h2>Distribution (1000) of sample means (Sample size: 10)</h2>
+<p><img src="presentation_ahrr_files/figure-revealjs/unnamed-chunk-5-1.png" width="768" height="500px" /></p>
+<aside class="notes" data-markdown>
+<p>This graph shows histogram of means of 1000 samples of size 10 each.</p>
+<p>We can see that there is marked decrease in skewness, it has become almost symmetrical.</p>
+<p>The graph has peak near population mean of 5 months.</p>
+The yellow dashed lines represent the lower and upper borders of central 95% of the samples. The width acts as a measure of precision of the sample means around the population mean. Its width can also be taken as the width of 95% Confidence Interval.
+</aside>
+</section><section id="distribution-of-sample-means-with-sample-size" class="slide level2">
+<h2>Distribution of Sample Means with Sample Size</h2>
+<p><img src="presentation_ahrr_files/figure-revealjs/unnamed-chunk-6-1.png" width="768" height="500px" /></p>
+<aside class="notes" data-markdown>
+<p>We repeat the sampling 1000 times from the underlying population each with sample size of 5, 10, 100 and 1000 and plot the histograms, to demonstrate the effect of sample size on the shape and precision of histogram.</p>
+We can appreciate that with increasing sample size, the estimate of population mean is getting more precise and the shape of the histogram is becoming more normal like.
+</aside>
+</section><section class="slide level2">
+
+<h3 id="larger-the-sample-size">Larger the sample size</h3>
+<ul>
+<li><p>Distribution nearer to normal (Central Limit Theorem)</p></li>
+<li><p>Narrower is the spread of distribution. More accurate is the estimate.</p></li>
+<li><p>No change in the mean value of the distribution</p></li>
+</ul>
+<aside class="notes" data-markdown>
+<p>We can appreciate that with increasing sample size, the estimate of population mean is getting more precise and the shape of the histogram is becoming more normal like.</p>
+We also appreciate that the mean of the sample means is still 5 months (meaning the sample mean is an unbiased estimate of the population mean).
+</aside>
+</section><section id="requirements-for-smple-size-calculation-for-1-sample" class="slide level2">
+<h2>Requirements for smple size calculation for 1 sample</h2>
+<ul>
+<li><p>Minimum desired precision (Margin of error) (<span class="math inline">\(\Delta\)</span>)</p></li>
+<li><p>Underlying standard deviation (<span class="math inline">\(sd\)</span>) (measure of spread, may require pilot study)</p></li>
+<li><p>Width of confidence interval (95% CI, 90% CI, 99% CI)</p></li>
+<li><p><strong>For 95% CI</strong></p></li>
+</ul>
+<p><span class="math display">\[
+n = (sd * Z_{0.975} / \Delta)^{2}
+\\Z_{0.975} = 1.96
+\]</span></p>
+</section><section class="slide level2">
+
+<h3 id="example">Example</h3>
+<ul>
+<li><p>A survey is carried out to estimate the mean height of a population in a city</p></li>
+<li><p>A pilot survey was carried out with 50 people and standard deviation of 50 cm was estimated</p></li>
+<li><p>We want to estimate the mean height with a margin of error of 10 cm</p></li>
+<li><p>n = ((50 * 1.96) / 10)^2 = 96</p></li>
+</ul>
+</section><section class="slide level2">
+
+<p><img src="presentation_ahrr_files/figure-revealjs/unnamed-chunk-7-1.png" width="768" /></p>
+<aside class="notes" data-markdown>
+The plot shows the relation between the Margin of Error and sample size requirement. It shows that the smple size increases by square, as we want our estimate to be more precise.
+</aside>
+</section></section>
+<section><section id="simulation-for-difference-between-two-populations" class="title-slide slide level1"><h1>Simulation for difference between two populations</h1><aside class="notes" data-markdown>
+After understanding the role of sample size in increasing the precision of estimate of population mean, we will discuss about the commoner problem of comparing two populations.
+</aside></section><section id="scenario-1" class="slide level2">
+<h2>Scenario</h2>
+<ul>
+<li><p>A <strong>new drug (Drug 2)</strong> has been invented as chemotherapy which is being tested against <strong>standard of care (Drug 1)</strong></p></li>
+<li><p>Outcome of interest is the <strong>duration of remission</strong></p></li>
+<li><p>Say, duration of remission for standard of care (Drug 1) is <strong>exponentially distributed</strong> with mean of <strong>5 months</strong></p></li>
+<li><p>Duration of remission for new drug (Drug 2) is <strong>exponentially distributed</strong> with mean of <strong>10 months</strong></p></li>
+</ul>
+<aside class="notes" data-markdown>
+<p>Say, a new drug 2 is invented which we want to test against the standard of care drug 1.</p>
+<p>As before we are interested in the duration of remission in months.</p>
+Let us say that drug 2 has longer duration of remission of 10 months compared to 5 months for drug 1. We will not be knowing this value in real life, and will have to estimate it with some acceptable errors.
+</aside>
+</section><section class="slide level2">
+
+<p><img src="presentation_ahrr_files/figure-revealjs/unnamed-chunk-8-1.png" width="768" /></p>
+<aside class="notes" data-markdown>
+The graph shows the distribution of both the populations.
+</aside>
+</section><section id="assessing-difference-between-drug-1-and-drug-2" class="slide level2">
+<h2>Assessing difference between Drug 1 and Drug 2</h2>
+<ul>
+<li><p><strong>Difference between means</strong> between Drug 2 and Drug 1 (Drug 2 - Drug 1)</p></li>
+<li><p>Drug 2 is better by 5 months than Drug 1 <strong>(A VALUE WHICH IS NOT KNOWN IN REAL LIFE)</strong></p></li>
+<li><p>We define a <strong>clinically significant difference</strong> between Drug 1 and Drug 2 as 3 months <strong>(POPULATION CHARACTERISTICS)</strong></p></li>
+</ul>
+<aside class="notes" data-markdown>
+<p>We will use difference between means of duration of remission between both the drugs as measure of performance difference between both the drugs.</p>
+<p>As told earlier, we know that drug 2 is better than drug 1 by 5 months. We have to remember that we are not aware of this fact in real life.</p>
+<p>Before proceeding further we, the investigator, need to decide on the clinically significant difference between drug 1 and drug 2 (among populations but not samples). It means that we will have to decide on the minimum difference between both the drugs, which is clinically significant. Setting this is the first requirement for sample size calculation. It is the most controversial issue of the sample size determination, as to how can an investigator decide on the clinically significant difference, which will be different for different clinicians and situations.</p>
+<p>But this is the limitation with which we have to carry on.</p>
+For simulation, we decide that difference be 3 months.
+</aside>
+</section><section id="simulation" class="slide level2">
+<h2>Simulation</h2>
+<ul>
+<li><p>Population under <strong>Null hypothesis</strong>: difference = 0 (5m, 5m)</p></li>
+<li><p>Population under <strong>Clinically significant difference hypothesis</strong> (population with minimum difference of clinically significant difference): difference = 3 (5m, 8m)</p></li>
+</ul>
+<aside class="notes" data-markdown>
+<p>The population in question is the difference between drug 2 and drug 1.</p>
+<p>We will synthesise two populations, null population with no difference and clinically significant difference population.</p>
+We will generate samples from both the populations and analyse the findings.
+</aside>
+</section><section id="sample-size-10" class="slide level2">
+<h2>Sample size = 10</h2>
+<p><img src="presentation_ahrr_files/figure-revealjs/unnamed-chunk-9-1.png" width="768" height="400px" /></p>
+<ul>
+<li><p>Green dashed line: sample mean</p></li>
+<li><p>Red line: 97.5% of the null population (determines the region of rejection)</p></li>
+</ul>
+<aside class="notes" data-markdown>
+<p>The top graph is the histogram depicting distribution of sample means from population with clinically significant difference, with black line depicting the mean of 3 months.</p>
+<p>The bottom graph shows the histogram depicting distribution of sample means from the null population (having no difference), with black line depicting mean of 0 months.</p>
+<p>The red line depicts the outside 2.5% of the distribution for the null population. Values outside this line are not considered part of the null population.</p>
+The green dashed line is the line of mean difference for a particular pair of samples.
+</aside>
+</section><section class="slide level2">
+
+<p><img src="presentation_ahrr_files/figure-revealjs/unnamed-chunk-10-1.png" width="768" height="400px" /></p>
+<ul>
+<li><p>Sample in the region of rejection: assumed that sample doesnot belong to the null population</p></li>
+<li><p><strong>Assuming that null population is the truth,</strong> probability of committing error that the sample doesnot belong to the null population: <strong>Type I error (Alpha)</strong> (5%)</p></li>
+</ul>
+<aside class="notes" data-markdown>
+<p>Any sample which falls in the region of rejection, it is assumed, that the sample doesnot belong to the null population.</p>
+<p>But unfortunately, if the null population is the truth, then we are wrong in rejecting the sample. This error is known as the type 1 error (or alpha error), and it is usually kept at 5%.</p>
+<p>Alpha error is the second thing we should decide on for calculating sample size.</p>
+If we are extremely conservative and want to stick with the standard of care drug (null population), we will reduce the alpha error to lesser value, to say, 1%.
+</aside>
+</section><section class="slide level2">
+
+<p><img src="presentation_ahrr_files/figure-revealjs/unnamed-chunk-11-1.png" width="768" height="350px" /></p>
+<ul>
+<li><p>Upper panel: Population belonging to minimum clinically significant difference</p></li>
+<li><p><strong>Assuming the the above population is the truth,</strong> the probability of correctly inferring that the sample belongs to above population is the <strong>POWER</strong> (80%)</p></li>
+</ul>
+<aside class="notes" data-markdown>
+<p>As already described, the upper panel represents distribution of sample means belonging to the population of minimum clinically significant difference.</p>
+<p>Any sample which is in the region of rejection will be assumed to be belonging to the alternative population.</p>
+<p>Assuming that the existence of alternative population is the truth, the probability of correctly inferring that the sample belongs to the bove population is the power of the study and it is kept at above 80% in usual circumstances.</p>
+</aside>
+</section><section class="slide level2">
+
+<p><img src="presentation_ahrr_files/figure-revealjs/unnamed-chunk-12-1.png" width="768" height="350px" /></p>
+<ul>
+<li><strong>Assuming that the null population is the truth</strong>, the probability that the sample same or more extreme to the present sample belongs to the null population is <strong>p value</strong></li>
+</ul>
+<aside class="notes" data-markdown>
+<p>Now the most abused statistical measure, the p value. The exact definition of p value states that, assuming the null population is true, the probability that the given sample belongs to the null population. Lower p value suggests that the sample is at the extreme of the null population.</p>
+<p>Take note that in all the above definitions, we are assuming that either null population is true or the lternate population is true.</p>
+<p>The biggest fallacy in classical statistics is that it does not tell us anything about the chance of truth of alternate population, given the present sample.</p>
+Let us increase the smple size to 100 from 10 and relook into the parameters.
+</aside>
+</section><section id="sample-size-100" class="slide level2">
+<h2>Sample size = 100</h2>
+<p><img src="presentation_ahrr_files/figure-revealjs/unnamed-chunk-13-1.png" width="768" /></p>
+</section><section class="slide level2">
+
+<ul>
+<li><p>p value decreases to so called <strong>statistically significant</strong> level, just by increasing the sample size</p>
+<ul>
+<li>FALLACY of P VALUE: Some Other Day!!</li>
+</ul></li>
+<li><p>Power of study increases by increasing the sample size</p></li>
+<li><p>Estimates estimate the population parameter more precisely by increasing the sample size</p></li>
+</ul>
+<aside class="notes" data-markdown>
+<p>We can easily appreciate that like earlier, the sample means are more closely concentrated around the population mean with increasing sample size, which lead to</p>
+decrease in p value to less than, so called statistically significant level increase in power of the study increase in precision of the sample estimate (narrower confidence intervals)
+</aside>
+</section><section id="sample-size-1000" class="slide level2">
+<h2>Sample size = 1000</h2>
+<p><img src="presentation_ahrr_files/figure-revealjs/unnamed-chunk-14-1.png" width="768" /></p>
+</section></section>
+<section><section id="ps-power-and-sample-size-calculator-vanderbilt-university" class="title-slide slide level1"><h1>PS Power and Sample Size Calculator (Vanderbilt University)</h1></section><section id="download" class="slide level2">
+<h2>Download …</h2>
+<p>Downloadable from <a href="http://biostat.mc.vanderbilt.edu/wiki/Main/PowerSampleSize" class="uri">http://biostat.mc.vanderbilt.edu/wiki/Main/PowerSampleSize</a> as <code>pssetup3.exe</code> file</p>
+</section><section id="cite-the-package" class="slide level2">
+<h2>Cite the package …</h2>
+<p>Dupont WD, Plummer WD: ‘Power and Sample Size Calculations: A Review and Computer Program’, Controlled Clinical Trials 1990; 11: 116-28</p>
+<p>or</p>
+<p>Dupont WD, Plummer WD: ‘Power and Sample Size Calculations for studies involving Linear Regression:’, Controlled Clinical Trials 1998; 19: 589-601</p>
+</section></section>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/js/head.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: false,
+        // Transition style
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/notes/notes.js', async: true },
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>

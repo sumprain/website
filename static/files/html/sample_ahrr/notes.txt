@@ -1,0 +1,127 @@
+
+As the season of AFMRC projects and thesis submission of residents are nearing, so is the exercise of sample size calculation.
+Good afternoon everybody, today I will be deliberating on the fundamentals of role of sample size in conducting studies and will dwelve upon the sample size calculation of commonly used study designs.
+Calculating sample size is a fundamental requirement before carrying out any inferential study, which means inferring population from the sample.
+As we will be seeing through this lecture, it requires understanding of study design and also a rough estimate of the population parameters.
+
+------------------
+
+Before we proceed further, we must be able to differentiate between population and sample.
+Population is a concept or something very big which cannot be usually counted exactly, and despite our efforts, not well defined. We want to know something about the population (some attribute), but we donot have any direct mean of doing so. Some of the attributes may be prevalence of Heart Attack in Indian population, chances of surviving at the end of 1 year after Lung Cancer in Indians, mean age of males having first episode of Acute Corenary Syndrome all across globe.
+We can, at the best, estimate the population attribute from collected sample with some acceptable error.
+
+------------------
+
+We should understand that the sample arises from the population but in inferential statistics, we are trying to estimate the population from sample.
+The sample which is an acceptable representation of the underlying population is the random sample.
+
+------------------
+
+A sample is called random sample if all the entities from the underlying population have equal chance of being selected for inclusion into the sample, and
+if the selection process is independent, meaning that, prior inclusion of any entity in the sample doesnot influence the chances of any of the entities being selected in future.
+
+------------------
+
+To further understand the concept of the population, sample, population parameter, sample estimate, its precision and relation with sample size, let us take help of simulation study by computer.
+
+------------------
+
+We are dealing with patients with lung cancer and we want to characterise the duration of remission (disease free state) after chemotherapy (Standard of care).
+We assume that the mean duration of those patients (population) is 5 months and the distribution is right skewed which can be modelled as exponential distribution.
+
+------------------
+
+The graph shows the distribution of duration of remission in months with mean of 5 months. We can appreciate the extreme right skewness of the distribution. Majority of values will be quite short and few of the values will be quite long.
+We can select random sample of any size from this population which we are doing the next.
+
+------------------
+
+We select two random samples of 100 each from the underlying population and plot them as histograms over the underlying distribution.
+We appreciate that in real life when conducting study, we will have only one sample.
+We also appreciate that both the random samples are different from each other, but general shape of the distribution remains same (right skewed)
+
+------------------
+
+We also see that the mean duration in both samples are different from each other and from the population mean of 5 months.
+The sample mean will be distributed around the population mean with some spread.
+
+------------------
+
+This graph shows histogram of means of 1000 samples of size 10 each.
+We can see that there is marked decrease in skewness, it has become almost symmetrical.
+The graph has peak near population mean of 5 months.
+The yellow dashed lines represent the lower and upper borders of central 95% of the samples. The width acts as a measure of precision of the sample means around the population mean. Its width can also be taken as the width of 95% Confidence Interval.
+
+------------------
+
+We repeat the sampling 1000 times from the underlying population each with sample size of 5, 10, 100 and 1000 and plot the histograms, to demonstrate the effect of sample size on the shape and precision of histogram.
+We can appreciate that with increasing sample size, the estimate of population mean is getting more precise and the shape of the histogram is becoming more normal like.
+
+------------------
+
+We can appreciate that with increasing sample size, the estimate of population mean is getting more precise and the shape of the histogram is becoming more normal like.
+We also appreciate that the mean of the sample means is still 5 months (meaning the sample mean is an unbiased estimate of the population mean).
+
+------------------
+
+The plot shows the relation between the Margin of Error and sample size requirement. It shows that the smple size increases by square, as we want our estimate to be more precise.
+
+------------------
+
+After understanding the role of sample size in increasing the precision of estimate of population mean, we will discuss about the commoner problem of comparing two populations.
+
+------------------
+
+Say, a new drug 2 is invented which we want to test against the standard of care drug 1.
+As before we are interested in the duration of remission in months.
+Let us say that drug 2 has longer duration of remission of 10 months compared to 5 months for drug 1. We will not be knowing this value in real life, and will have to estimate it with some acceptable errors.
+
+------------------
+
+The graph shows the distribution of both the populations.
+
+------------------
+
+We will use difference between means of duration of remission between both the drugs as measure of performance difference between both the drugs.
+As told earlier, we know that drug 2 is better than drug 1 by 5 months. We have to remember that we are not aware of this fact in real life.
+Before proceeding further we, the investigator, need to decide on the clinically significant difference between drug 1 and drug 2 (among populations but not samples). It means that we will have to decide on the minimum difference between both the drugs, which is clinically significant. Setting this is the first requirement for sample size calculation. It is the most controversial issue of the sample size determination, as to how can an investigator decide on the clinically significant difference, which will be different for different clinicians and situations.
+But this is the limitation with which we have to carry on.
+For simulation, we decide that difference be 3 months.
+
+------------------
+
+The population in question is the difference between drug 2 and drug 1.
+We will synthesise two populations, null population with no difference and clinically significant difference population.
+We will generate samples from both the populations and analyse the findings.
+
+------------------
+
+The top graph is the histogram depicting distribution of sample means from population with clinically significant difference, with black line depicting the mean of 3 months.
+The bottom graph shows the histogram depicting distribution of sample means from the null population (having no difference), with black line depicting mean of 0 months.
+The red line depicts the outside 2.5% of the distribution for the null population. Values outside this line are not considered part of the null population.
+The green dashed line is the line of mean difference for a particular pair of samples.
+
+------------------
+
+Any sample which falls in the region of rejection, it is assumed, that the sample doesnot belong to the null population.
+But unfortunately, if the null population is the truth, then we are wrong in rejecting the sample. This error is known as the type 1 error (or alpha error), and it is usually kept at 5%.
+Alpha error is the second thing we should decide on for calculating sample size.
+If we are extremely conservative and want to stick with the standard of care drug (null population), we will reduce the alpha error to lesser value, to say, 1%.
+
+------------------
+
+As already described, the upper panel represents distribution of sample means belonging to the population of minimum clinically significant difference.
+Any sample which is in the region of rejection will be assumed to be belonging to the alternative population.
+Assuming that the existence of alternative population is the truth, the probability of correctly inferring that the sample belongs to the bove population is the power of the study and it is kept at above 80% in usual circumstances.
+
+------------------
+
+Now the most abused statistical measure, the p value. The exact definition of p value states that, assuming the null population is true, the probability that the given sample belongs to the null population. Lower p value suggests that the sample is at the extreme of the null population.
+Take note that in all the above definitions, we are assuming that either null population is true or the lternate population is true.
+The biggest fallacy in classical statistics is that it does not tell us anything about the chance of truth of alternate population, given the present sample.
+Let us increase the smple size to 100 from 10 and relook into the parameters.
+
+------------------
+
+We can easily appreciate that like earlier, the sample means are more closely concentrated around the population mean with increasing sample size, which lead to
+decrease in p value to less than, so called statistically significant level increase in power of the study increase in precision of the sample estimate (narrower confidence intervals)
