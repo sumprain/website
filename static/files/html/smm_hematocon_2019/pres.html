@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>Smoldering Myeloma To treat or not to treat</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="pres_files/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+
+<link rel="stylesheet" href="pres_files/reveal.js-3.3.0.1/css/theme/simple.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title"><strong>Smoldering Myeloma</strong><br>To <strong>treat</strong> or <strong>not</strong> to treat</h1>
+</section>
+
+<section id="dr-suman-kumar" class="slide level2">
+<h2>Dr Suman Kumar</h2>
+<h3 id="department-of-clinical-hematology-army-hospital-research-and-referral-delhi"><span style="color:gray"><em>Department of Clinical Hematology, <br>Army Hospital (Research and Referral), Delhi</em></span></h3>
+<h4 id="nov-2019">08 Nov 2019</h4>
+<h3 id="conflict-of-interest-nil"><strong>Conflict of Interest: Nil</strong></h3>
+<p>Presentation available at <a href="https://sumprain.netlify.com/files/html/smm_hematocon_2019/pres.html" class="uri">https://sumprain.netlify.com/files/html/smm_hematocon_2019/pres.html</a> or <a href="https://bit.ly/36RCnl0" class="uri">https://bit.ly/36RCnl0</a></p>
+</section>
+<section><section id="spectrum-of-plasma-cell-dyscrasia" class="title-slide slide level1" data-background="black"><h1><span style="color:white">Spectrum of Plasma Cell Dyscrasia</span></h1></section><section id="the-spectrum" class="slide level2">
+<h2>The spectrum</h2>
+<ul>
+<li>Single plasma cell <span class="math inline">\(\rightarrow\)</span> mutation <span class="math inline">\(\rightarrow\)</span> proliferative advantage <span class="math inline">\(\rightarrow\)</span> increase in clonal cell numbers</li>
+<li><strong>Continuum</strong> of disease state and <strong>culminates in death</strong></li>
+</ul>
+<hr>
+<h4 id="disease-state-has-been-discretised-into-different-stages-mgus-myeloma">Disease state has been discretised into different stages (MGUS, Myeloma)</h4>
+<h4 id="patients-are-caught-at-different-stages">Patients are caught at different stages</h4>
+<p><span style="color:red; text-align:center"><strong>Malignant plasma cell is immortal</strong></span></p>
+<aside class="notes">
+<p>single plasma cell after mutation, increase in clonal tumour cell numbers, leading to a continuum of disease state culminating in death</p>
+<p>The states have been discretised as MGUS and myeloma, with the gray area as smoldering myeloma</p>
+<p>Patients are caught at different stages</p>
+<p>A malignant plasma cell is immortal, meaning that the disease is incurable at all the stages.</p>
+</aside>
+</section><section id="evolution-to-myeloma-low-disease-load" class="slide level2">
+<h2>Evolution to Myeloma (low disease load)</h2>
+<p><img data-src="pres_files/figs/mgus_prog.jpg" alt="Progression of MGUS" /></p>
+<p><span style="color:gray;text-align:right;font-size:20px">NEJM, 2018; <a href="https://doi.org/10.1056/NEJMoa1709974" class="uri">https://doi.org/10.1056/NEJMoa1709974</a></span></p>
+</section><section id="evolution-to-myeloma-high-disease-load" class="slide level2">
+<h2>Evolution to Myeloma (high disease load)</h2>
+<p><img data-src="pres_files/figs/smm_prog.svg" alt="Progression of SMM" /></p>
+<p><span style="color:gray;text-align:right;font-size:20px">NEJM, 2007; <a href="https://doi.org/10.1056/NEJMoa070389" class="uri">https://doi.org/10.1056/NEJMoa070389</a></span></p>
+</section><section id="evolution-into-myeloma" class="slide level2">
+<h2>Evolution into Myeloma</h2>
+<p><img data-src="pres_files/figs/haz_to_myeloma.svg" alt="Hazard to develop Myeloma" /></p>
+<p><a href="https://sumprain.netlify.com/post/evolution_to_myeloma/">Explanation: https://sumprain.netlify.com/post/evolution_to_myeloma/</a></p>
+<aside class="notes">
+<p>As we can see that the hazard of developing multiple myeloma is constant till a long duration of time, following which the hazard increases at a rapid rate till the time when it is almost certain that myeloma is going to occur</p>
+<p>The initial hazard of patient progressing into myeloma is around 1% per year, which increases to 10% and then to &gt;50% as the disease progresses nearer to myeloma</p>
+</aside>
+</section><section id="ill-effects-of-gammaglobulinemia" class="slide level2">
+<h2>Ill effects of Gammaglobulinemia</h2>
+<ul>
+<li><p>Can be any of the <strong>heavy Chains</strong>, <strong>light chains</strong>, <strong>full or truncated Ig</strong>, <strong>insoluble</strong> form or <strong>amyloid</strong> form</p></li>
+<li><p>Usually causes no symptoms</p></li>
+<li><p><strong>Antibody</strong> related complications (neuropathy, RA, glomerulonephritis, hematological)</p></li>
+<li><p><strong>Deposition</strong> related complications (LCDD, Amyloidosis)</p></li>
+<li><p><strong>Hyperviscosity</strong> related complications</p></li>
+</ul>
+<p><span style="color:red">Presence of ill effects excludes diagnosis of MGUS/SMM</span></p>
+<aside class="notes">
+<p>The hypergammaglobinemia which can be of any type both in terms of heavy chains and light chains and their abnormal forms, insoluble forms and amyloid forms can be completely asymptomatic.</p>
+<p>Although not so common, hypergammaglobinemia can lead to antibody related complications (neuropathy, anemia, thrombocytopenia, PRCA, RA, glomerulonephritis) and deposition disease (light chain deposition in kidneys, amyloidosis)</p>
+</aside>
+</section><section id="ill-effects-of-myeloma" class="slide level2">
+<h2>Ill effects of Myeloma</h2>
+<ul>
+<li><p>Symptomatic myeloma is characterised by complications attributed to <strong>interaction of malignant plasma cells with bone marrow niche</strong> in form of <span style="font-size:larger;color:red"><strong>C R A B</strong></span></p></li>
+<li><p>Complications can be devastating: <strong>AKI <span class="math inline">\(\rightarrow\)</span> ESRD</strong>, <strong>vertebral fracture <span class="math inline">\(\rightarrow\)</span> paraplegia with bladder involvement</strong></p></li>
+</ul>
+<p><span style="color:red">Emerging goal of myeloma treatment is to prevent devastating myeloma related complications</span></p>
+<aside class="notes">
+<p>In addition to the ill effects of gamma globulins, myeloma is characterised by complications attributed to interaction of plasma cell with bone marrow niche in form of CRAB</p>
+<p>The complications of myeloma can be devastating in form of kidney failure and paraplegia with bladder involvement post vertebral body fractures</p>
+</aside>
+</section></section>
+<section><section id="smoldering-myeloma" class="title-slide slide level1" data-background="black"><h1><span style="color:white">Smoldering Myeloma</span></h1></section><section id="stage-in-between-mgus-and-myeloma" class="slide level2">
+<h2>Stage in between MGUS and Myeloma</h2>
+<p><img data-src="pres_files/figs/smm_defn.svg" alt="Diagnosis of SMM" /></p>
+<aside class="notes">
+<p>Definition of this entity is in process of evolution. It is a stage in disease development somewhere in between MGUS and overt myeloma which is characterised by myeloma defining events.</p>
+<p>The disease stage is characterised by considerably increased chances of progression to myeloma, which had led to the present debate, as to whether start these patients on treatment or wait for overt myeloma to develop. If rate of progression to myeloma is low, then there will be a proportion of patients, who may not progress to myeloma in relevant future.</p>
+</aside>
+</section><section id="high-risk-for-progression" class="slide level2">
+<h2>High Risk for progression</h2>
+<ul>
+<li><strong>Increased tumor burden</strong>
+<ul>
+<li>SFLC &lt; 0.125 or &gt; 8, BMPC <span class="math inline">\(\ge\)</span> 10%, Serum M Band <span class="math inline">\(\ge\)</span> 3 g/dL</li>
+</ul></li>
+</ul>
+<p><img data-src="pres_files/figs/smm_risk_score.jpeg" style="width:50.0%" alt="Risk score SMM" /></p>
+<p><span style="color:gray;text-align:right;font-size:20px">Blood, 2008; <a href="https://doi.org/10.1182/blood-2007-08-108357" class="uri">https://doi.org/10.1182/blood-2007-08-108357</a></span></p>
+</section><section id="high-risk-for-progression-contd" class="slide level2">
+<h2>High Risk for progression (contd …)</h2>
+<ul>
+<li>IgA subtype</li>
+<li>Immunoparesis with reduction of 2 uninvolved Ig subtypes</li>
+<li>Aberrant plasma cell immunophenotype</li>
+<li>Increased circulating plasma cells (&gt;5% of PCs per 100 cytoIg+ PBMC or &gt;5x10<sup>6</sup> PC/L)</li>
+<li>t(4;14), del 17p, gain 1q21, hyperdiploidy (effect more prominent in patients with low tumour load)</li>
+</ul>
+<aside class="notes">
+<p>Over the years, some of the risk factors have been developed, which are mainly indicating the tumor burden. In case of early statge of the disease, genetic risk factors have also been elucidated</p>
+<p>reference 27 uptodate, eMP &gt;= 25%, eHb &lt;= 0.5 g/dL, BMPC &gt;= 20%</p>
+</aside>
+</section><section id="complications-of-smm" class="slide level2">
+<h2>Complications of SMM</h2>
+<p>Increased risk of fractures and thromboembolic disease</p>
+<aside class="notes">
+<p>Increased risk of fractures and thromboembolic disease</p>
+</aside>
+</section></section>
+<section><section id="management" class="title-slide slide level1" data-background="black"><h1><span style="color:white">Management</span></h1></section><section id="trial-1-rct" class="slide level2">
+<h2>Trial 1 (RCT)</h2>
+<ul>
+<li>Hjort and colleagues, 1993, Eur J Hemat <a href="https://doi.org/10.1111/j.1600-0609.1993.tb00148.x" class="uri">https://doi.org/10.1111/j.1600-0609.1993.tb00148.x</a></li>
+<li>MP vs observation</li>
+<li>25 vs 25</li>
+<li>2 patients in observation arms developed <strong>vertebral fractures</strong></li>
+<li>2 patients in treatment arm developed <strong>acute leukemia</strong></li>
+<li><strong>No difference in response rate, response duration, survival</strong></li>
+</ul>
+<p><span style="color:red">Deferring chemotherapy is feasible in well informed and well controlled patients</span></p>
+</section><section id="trial-2" class="slide level2">
+<h2>Trial 2</h2>
+<ul>
+<li>Mateos and colleagues, 2013, NEJM, <a href="https://doi.org/10.1056/NEJMoa1300439" class="uri">https://doi.org/10.1056/NEJMoa1300439</a></li>
+<li>Phase 3, open label, randomised controlled trial</li>
+<li>119 patients of High risk SMM (M Band &gt; 10%, SFLC &gt; 10, BM FCM &gt; 95% aberrant PC among all PC)</li>
+<li>Len-Dexa (9 cycles, followed by len maint) vs observation</li>
+<li>Primary end point: time to progression to symptomatic disease</li>
+</ul>
+</section><section class="slide level2">
+
+<ul>
+<li>Median follow up: 40 months</li>
+<li>Median time to progression: NR vs 21 months (HR: 0.18, p &lt; 0.001)</li>
+<li>3 year OS: 94% vs 80% (HR: 0.31, p = 0.03)</li>
+</ul>
+</section><section class="slide level2">
+
+<ul>
+<li>Median follow up: 75 months</li>
+<li>Median time to progression: NR vs 23 months</li>
+<li>Progression to myeloma: 39% vs 86%</li>
+<li>Death: 18% vs 36%</li>
+</ul>
+<p><span style="color:red">Support use of early treatment in high risk SMM</span></p>
+<p>Various study related issues were raised</p>
+</section><section id="trial-3" class="slide level2">
+<h2>Trial 3</h2>
+<ul>
+<li>Ola Landgren and colleagues, 2015, JAMA Oncology, <a href="https://doi.org/10.1001/jamaoncol.2015.2010" class="uri">https://doi.org/10.1001/jamaoncol.2015.2010</a></li>
+<li>8 cycles of KRd followed by Len maint 24 cycles</li>
+<li>High risk SMM (prior to 2014 IMWG definition)</li>
+<li>12 patients</li>
+<li>All achieved CR</li>
+<li>MRD (FCM based) negativity 11/12 (92%)</li>
+<li>All patients remained progression free at 12 months of follow up</li>
+</ul>
+</section><section id="general-management-strategies" class="slide level2">
+<h2>General management strategies</h2>
+<ul>
+<li>Except of Allogenic SCT, <span style="color:red">myeloma is an incurable disease as on today</span></li>
+<li>PCD is a <strong>heterogenous disease</strong>, with markedly <strong>differing rate of progression</strong></li>
+<li>Aim is to <strong>identify</strong> patients with <strong>aggressive disease</strong> with rapid rate of progression and treat them to <strong>halt the progression</strong></li>
+<li><strong>Risk assessment</strong> is predominantly based on <strong>tumor load</strong></li>
+<li><strong>Higher tumor load</strong> patients have higher chances of having <strong>more aggressive disease</strong> (but they do have <strong>some chances</strong> of having indolent disease)</li>
+<li><strong>Direct way</strong> to assess aggressiveness of the disease is to <strong>re-assess tumor load at multiple closely spaced time points</strong></li>
+</ul>
+<aside class="notes">
+<p>Patients with SMM do not require immediate treatment.</p>
+<p>Risk factors assessment needs to be done. Low risk cases may be followed up.</p>
+<p>Patients with high risk factors, strategies to prevent progression.</p>
+</aside>
+</section><section id="personal-strategy" class="slide level2">
+<h2>Personal strategy</h2>
+<ol type="1">
+<li><p>SMM <span class="math inline">\(\rightarrow\)</span> close monitoring for disease progression</p></li>
+<li><p>If progression to asymptomatic myeloma and/or rapid progression <span class="math inline">\(\rightarrow\)</span> TREAT AS MYELOMA</p></li>
+<li><p>Else <span class="math inline">\(\rightarrow\)</span> OBSERVE and follow point 1</p></li>
+</ol>
+</section></section>
+<section><section id="future-direction" class="title-slide slide level1" data-background="black"><h1><span style="color:white">Future direction</span></h1></section><section id="emerging-concepts-in-myeloma-treatment" class="slide level2">
+<h2>Emerging concepts in myeloma treatment</h2>
+<ul>
+<li><p>40 - 50 ongoing trials registered at CTRI on various regimens on SMM</p></li>
+<li><p><strong>Myeloma treatment</strong></p>
+<ul>
+<li>Balance between <strong>myeloma related complications</strong> <span class="math inline">\(\leftrightarrow\)</span> <strong>treatment related complications</strong></li>
+</ul></li>
+<li><p>Trend towards <strong>reduction</strong> in treatment related complications (safer drugs, better care and mgt of complications)</p></li>
+</ul>
+</section><section class="slide level2">
+
+<ul>
+<li><strong>We aim</strong>
+<ul>
+<li>Identifying patients with aggressive disease with higher rate of progression as early as possible (may be at the time of presentation)</li>
+<li>Anti myeloma treatment only to those patients (Personalised Treatment) <span class="math inline">\(\rightarrow\)</span> retardation of disease progression <span class="math inline">\(\rightarrow\)</span> delay in myeloma related complications</li>
+</ul></li>
+<li><strong>We are more inclined towards</strong>
+<ul>
+<li>Using anti-myeloma treatment at <strong>early stage</strong> to patients with <strong>aggressive disease</strong> with aim to <strong>halt progression</strong> of the disease and <span style="color:red"><strong>curing</strong></span> it</li>
+</ul></li>
+</ul>
+<aside class="notes">
+<p>As of now, except for allogenic SCT, myeloma is incurable disease.</p>
+<p>The aim of initiating a patient on anti myeloma treatment is to prevent him/her of the complications and morbidities of the disease.</p>
+<p>Treating a patient of myeloma makes him to suffer from the complications related with chemotherapy, which may be fatal as in cases of high dose chemotherapy and stem cell transplantation.</p>
+<p>It is a logical approach to start a patient on anti myeloma therapy at an early stage, with an aim to reduce the speed of disease progression, which will lead to delay in development of myeloma related complications. Whether this is true and after which level of disease, this is true, remains a subject of debate and further studies.</p>
+<p>As there are more drugs with lesser side effects and/or more potent drugs, there is going to be more inclination to use anti myeloma drugs at an early stage with aim to halt or retard rate of progression of disease and development of complications and may be to prolong life.</p>
+</aside>
+</section></section>
+<section id="thank-you" class="title-slide slide level1" data-background="black"><h1><span style="color:white">Thank You</span></h1><p><span style="color:red"><strong>PRESENT</strong></span></p>
+<p><span style="color:red">SMM <span class="math inline">\(\rightarrow\)</span> OBSERVE <span class="math inline">\(\rightarrow\)</span> TREAT IF PROGRESSES</span></p>
+<p><span style="color:white"><strong>FUTURE</strong></span></p>
+<p><span style="color:white">PCD <span class="math inline">\(\rightarrow\)</span> BASELINE PREDICTION <span class="math inline">\(\rightarrow\)</span> AGGRESSIVE DISEASE <span class="math inline">\(\rightarrow\)</span> TREAT WITH SAFER AGENTS TO HALT/CURE</span></p>
+<p><span style="color:white">PCD <span class="math inline">\(\rightarrow\)</span> BASELINE PREDICTION <span class="math inline">\(\rightarrow\)</span> INDOLENT DISEASE <span class="math inline">\(\rightarrow\)</span> AVOID TREATMENT</span></p></section>
+    </div>
+  </div>
+
+  <script src="pres_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="pres_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: true,
+        // Transition style
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'pres_files/reveal.js-3.3.0.1/plugin/notes/notes.js', async: true },
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>
