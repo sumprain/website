@@ -120,3 +120,15 @@ Oct;78(10):1211-5. doi: 10.1007/s12098-010-0300-1. Epub 2011 May 8. PubMed PMID:
 1. Yanamandra U, ..., _Kumar S_, ... (2018). Erythropoietin and ferritin response in native highlanders aged 4-19 years from the Leh-Ladakh region of India. British Journal of Haematology. doi: 10.1111/bjh.15553.
 
 1. Yanamandra U, ..., _Kumar S_, ... (2019). Anthropometric evaluation of school-going native highlanders (4-19 years of age) from the Leh-Ladakh region in India. Int J Adolesc Med Health. doi: 10.1515/ijamh-2018-0253.
+
+1. Uday Yanamandra, Manisha Sharma, Deeksha Katoch, ..., _Suman Kumar_, Velu Nair. High-altitude pulmonary oedema: Newer treatment modalities for an age-old problem. Indian J Med Res. 2019 Jun;149(6):778-782. doi: 10.4103/ijmr.IJMR_1981_17.
+
+1. Sanjeev Khera, _Suman Kumar Pramanik_, Saroj Kumar Patnaik. Transcobalamin deficiency: vitamin B 12 deficiency with normal serum B 12 levels. BMJ Case Rep. 2019 Oct 30;12(10):e232319. doi: 10.1136/bcr-2019-232319.
+
+1. Jyotsna Kapoor, _Suman Kumar Pramanik_, Pragya Agrawal, Vishvdeep Khushoo, Faran Naim, Sumeet P Mirgh, Rayaz Ahmed, Dinesh Bhurani, Narendra Agrawal. Retrospective institutional analysis of fludarabine/8 Gy TBI reduced intensity conditioning in high risk ALL. Bone Marrow Transplant. 2020 Apr 14. doi: 10.1038/s41409-020-0898-1.
+
+1. Uday Yanamandra, Rajat Bahl, Kundan Mishra, _Suman Kumar_. High Alt Med Biol. 2020 Jun 4. doi: 10.1089/ham.2020.0054.
+
+1. Sanjeev Khera, Rajan Kapoor, _Suman Kumar Pramanik_. Solitary serum methotrexate level 36 hours post high-dose methotrexate: A safe, efficacious, and cost-effective strategy to monitor methotrexate toxicities in childhood leukemia in resource-limited centers. Pediatr Blood Cancer. 2020 Jul;67(7):e28387. doi: 10.1002/pbc.28387.
+
+1. Uday Yanamandra, Revanth Boddu, _Suman Pramanik_ (Corres), Kundan Mishra, Rajan Kapoor, Ankur Ahuja, Tathagata Chatterjee, Satyaranjan Das. Prevalence and Clinical Characteristics of Post-Thrombotic Syndrome in High-Altitude-Induced Deep Vein Thrombosis: Experience of a Single Tertiary Care Center from Real-World Settings. High Alt Med Biol. 2020 Jul 20. doi: 10.1089/ham.2020.0053.
