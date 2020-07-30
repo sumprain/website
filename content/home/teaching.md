@@ -15,6 +15,7 @@ weight = 60
 
 +++
 
-I am an **Associate Professor in Medicine** for Delhi University.
+I am a **Professor in Clinical Hematology** for National Board of Examinations.
+
 
 I am qualified teacher in **Bioethics**

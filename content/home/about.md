@@ -75,8 +75,8 @@ weight = 5
 
 Suman Kumar Pramanik is alumnus of [Armed Forces Medical College](http://afmc.nic.in/), Pune, India. He completed his DM in Clinical Hematology from 
 [All India Institute of Medical Sciences](https://www.aiims.edu), New Delhi, India. 
-He is presently working as Clnical Hematologist at Army Hospital 
-(Research and Referral), New Delhi.
+He is presently working as **Clinical Hematologist at Army Hospital 
+(Research and Referral), New Delhi**.
 
 He is passionately involved in Data Analysis with [R](https://www.r-project.org/) and [Python](https://www.python.org).
 
