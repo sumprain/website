@@ -121,7 +121,7 @@ Oct;78(10):1211-5. doi: 10.1007/s12098-010-0300-1. Epub 2011 May 8. PubMed PMID:
 
 1. Yanamandra U, ..., _Kumar S_, ... (2019). Anthropometric evaluation of school-going native highlanders (4-19 years of age) from the Leh-Ladakh region in India. Int J Adolesc Med Health. doi: 10.1515/ijamh-2018-0253.
 
-1. Uday Yanamandra, Manisha Sharma, Deeksha Katoch, ..., _Suman Kumar_, Velu Nair. High-altitude pulmonary oedema: Newer treatment modalities for an age-old problem. Indian J Med Res. 2019 Jun;149(6):778-782. doi: 10.4103/ijmr.IJMR_1981_17.
+1. Uday Yanamandra, Manisha Sharma, Deeksha Katoch, ..., _Suman Kumar_ (corres), Velu Nair. High-altitude pulmonary oedema: Newer treatment modalities for an age-old problem. Indian J Med Res. 2019 Jun;149(6):778-782. doi: 10.4103/ijmr.IJMR_1981_17.
 
 1. Sanjeev Khera, _Suman Kumar Pramanik_, Saroj Kumar Patnaik. Transcobalamin deficiency: vitamin B 12 deficiency with normal serum B 12 levels. BMJ Case Rep. 2019 Oct 30;12(10):e232319. doi: 10.1136/bcr-2019-232319.
 
@@ -132,3 +132,19 @@ Oct;78(10):1211-5. doi: 10.1007/s12098-010-0300-1. Epub 2011 May 8. PubMed PMID:
 1. Sanjeev Khera, Rajan Kapoor, _Suman Kumar Pramanik_. Solitary serum methotrexate level 36 hours post high-dose methotrexate: A safe, efficacious, and cost-effective strategy to monitor methotrexate toxicities in childhood leukemia in resource-limited centers. Pediatr Blood Cancer. 2020 Jul;67(7):e28387. doi: 10.1002/pbc.28387.
 
 1. Uday Yanamandra, Revanth Boddu, _Suman Pramanik_ (Corres), Kundan Mishra, Rajan Kapoor, Ankur Ahuja, Tathagata Chatterjee, Satyaranjan Das. Prevalence and Clinical Characteristics of Post-Thrombotic Syndrome in High-Altitude-Induced Deep Vein Thrombosis: Experience of a Single Tertiary Care Center from Real-World Settings. High Alt Med Biol. 2020 Jul 20. doi: 10.1089/ham.2020.0053.
+
+1. Uday Yanamandra, Rajat Bahl, Kundan Mishra, _Suman Kumar_. Letter to the Editor: Portal Vein Thrombosis with Splenic Infarct in β-Thalassemia Minor at High Altitude. High Alt Med Biol. 2020 Sep;21(3):310. doi: 10.1089/ham.2020.0054. Epub 2020 Jun 4.
+
+1. Mayank Kumar, Abhishek Purohit, _Suman Pramanik_, Shashikant Saini. Evaluation of Factors Affecting Awareness About Beta-Thalassemia in Western Rajasthan. J Family Med Prim Care. 2020 Sep 30;9(9):4801-4804. doi: 10.4103/jfmpc.jfmpc_804_20. eCollection 2020 Sep.
+ 
+1. Uday Yanamandra, Venkatesan Somasundaram, Rajat Bahl, Suman Kumar Pramanik. Lead poisoning secondary to unprescribed ayurvedic medicine intake. BMJ Case Rep. 2020 Oct 30;13(10):e238576. doi: 10.1136/bcr-2020-238576.
+
+1. Sanjeev Khera, _Suman Kumar Pramanik_, Uday Yanamandra, Kundan Mishra, Rajan Kapoor, Satyaranjan Das. Dapsone: An Old but Effective Therapy in Pediatric Refractory Immune Thrombocytopenia. Indian J Hematol Blood Transfus. 2020 Oct;36(4):690-694. doi: 10.1007/s12288-020-01286-9. Epub 2020 May 7.
+
+1. Sanjeev Khera, _Suman Kumar Pramanik_, Suprita Kalra, Aradhana Dwivedi. Type B lactic acidosis due to Warburg effect in a child presenting with T cell acute lymphoblastic leukaemia: a milder phenotype. BMJ Case Rep. 2020 Mar 17;13(3):e233941. doi: 10.1136/bcr-2019-233941.
+
+1. Kundan Mishra, _Suman Pramanik_ (Corres), Aditya Jandial, Kamal Kant Sahu, Rajeev Sandal, Ankur Ahuja, Uday Yanamandra, Rajiv Kumar, Rajan Kapoor, Tarun Verma, Sanjeevan Sharma, Jasjit Singh, Satyaranjan Das, Tathagata Chatterjee, Ajay Sharma, Velu Nair. Real-world experience of eltrombopag in immune thrombocytopenia. Am J Blood Res. 2020 Oct 15;10(5):240-251. eCollection 2020.
+
+1. Kundan Mishra, _Suman Kumar_ (Corres), Aditya Jandial, Kamal Kant Sahu, Rajeev Sandal, Ankur Ahuja, Sanjeev Khera, Yanamandra Uday, Rajiv Kumar, Rajan Kapoor, Tarun Verma, Sanjeevan Sharma, Jasjit Singh, Satyaranjan Das, Tathagat Chatterjee, Ajay Sharma & Velu Nair. Real-world Experience of Rituximab in Immune Thrombocytopenia. Indian J Hematol Blood Transfus (2021). https://doi.org/10.1007/s12288-020-01351-3.
+
+1. Prasanth Ganesan,  Hasmukh Jain,  Bhausaheb Bagal,  Papagudi G. Subramanian,  Biju George,  Anu Korula,  Nikita Mehra,  Jayachandran P. Kalaiyarasi,  Dinesh Bhurani,  Narendra Agrawal,  Rayaz Ahmed,  Smita Kayal,  Jina Bhattacharyya,  Uday Yanamandra,  _Suman Kumar_,  Chepsy C. Philip,  M. Joseph John,  Ambily Nadaraj,  Omprakash Karunamurthy,  Jeyaseelan Lakshmanan,  Vikram Mathews,  Manju Sengar. Outcomes in adolescent and young adult acute lymphoblastic leukaemia: a report from the Indian Acute Leukaemia Research Database (INwARD) of the Hematology Cancer Consortium (HCC).  https://doi.org/10.1111/bjh.17268
